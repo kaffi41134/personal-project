@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們 About Us</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
+
+        * {
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 247, 224, 0.7);
+            background-repeat: repeat;
+            background-position: 0 0;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            line-height: 1.8;
+            color: #202226;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url(imgs/bgc_pattern.webp);
+            background-repeat: repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .header-placeholder {
+            height: 150px;
+        }
+
+        .title-zh {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.2em;
+            letter-spacing: 0.12em;
+        }
+
+        .title-en {
+            font-size: 24px;
+            font-style: italic;
+            color: #989797;
+            font-family: "Alata", sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .about-us .banner {
+            position: relative;
+        }
+
+        .about-us h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+            z-index: 10;
+            text-align: center;
+        }
+
+        .origin,
+        .proudof {
+            display: flex;
+            align-items: center;
+            max-width: 1320px;
+            margin: 200px auto;
+            gap: 90px;
+            padding: 0 10px;
+        }
+
+        .imgs {
+            flex: 1 1 50%;
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            flex: 1 1 50%;
+            align-self: flex-start;
+            padding-top: 20px;
+        }
+
+        .text h2 {
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            color: #40444d;
+            letter-spacing: 0.12em;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .brand-name,
+        .selection {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            max-width: 1320px;
+            margin: 200px auto;
+            gap: 90px;
+            padding: 0 10px;
+        }
+
+        .banner2 {
+            width: 100%;
+            height: auto;
+            max-width: 1920px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="about-us.html">
+                            <img src="imgs/dog_icon.svg" alt="關於我們icon">
+                            <span>關於我們</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-details.html">
+                            <img src="imgs/cat_icon.svg" alt="檢測介紹icon">
+                            <span>檢測介紹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-items.html">
+                            <img src="imgs/bone_icon.svg" alt="檢測項目icon">
+                            <span>檢測項目</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Q&A.html">
+                            <img src="imgs/Q&A_icon.svg" alt="常見問題icon">
+                            <span>常見問題</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                            <span>會員中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+    <section class="about-us">
+        <div class="banner">
+            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
+            <h1>
+                <span class="title-en" lang="en">About Us</span><br>
+                <span class="title-zh" lang="zh-TW">關於我們</span>
+            </h1>
+        </div>
+        <div class="origin">
+            <img class="imgs" src="imgs/banner.png" alt="建築物外觀">
+            <div class="text">
+                <h2>寵愛基因Pet Genic的緣起</h2>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>深植於我們對每一位毛小孩無條件的深切關愛。<br>
+                    我們深信，每隻寵物都是獨一無二的生命，<br>
+                    牠們的健康與幸福，值得最科學、最細緻的守護。<br>
+                    正是這份初心，驅動我們匯聚全球尖端基因科技<br>
+                    與專業獸醫知識，致力於為全球的寵物家庭，<br>
+                    提供最全面、最可靠的基因檢測服務。
+                </p>
+            </div>
+        </div>
+        <div class="brand-name">
+            <img class="imgs" src="imgs/brand-name.png" alt="品牌名稱由來的圖片">
+            <div class="text">
+                <h2>我們的品牌名稱由來</h2>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>深寵愛基因 Pet Genic不僅巧妙結合了「Pet (寵物)」與<br>
+                    「Genetics (基因學)」的核心「Genic」，<br>
+                    更深刻地彰顯了我們以基因科技寵愛毛孩的品牌理念。<br>
+                    這不只是一個名字，更是我們對科學承諾與深情關懷<br>
+                    的具體實踐。
+                </p>
+            </div>
+        </div>
+        <div class="proudof">
+            <img class="imgs" src="imgs/proudof.png" alt="實驗室內部">
+            <div class="text">
+                <h2>我們引以為傲的事</h2>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>透過國際級驗證的精準檢測，<br>
+                    搭配資深獸醫團隊的權威解讀與一對一諮詢，<br>
+                    將複雜基因資訊轉化為淺顯易懂的健康建議。<br>
+                    藉由基因檢測，您能提早預知愛寵的遺傳風險，<br>
+                    了解其品種特性與營養需求，進而與獸醫共同繪製<br>
+                    專屬健康藍圖，制定精準的預防與照護策略。
+                </p>
+            </div>
+        </div>
+        <div class="selection">
+            <img class="imgs" src="imgs/selection.png" alt="選擇「寵愛基因 Pet Genic」的圖片">
+            <div class="text">
+                <h2>選擇「寵愛基因 Pet Genic」</h2>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>不僅是選擇一份基因檢測報告，<br>
+                    更是選擇一份科學與愛的安心託付。<br>
+                    我們期許能成為您與毛小孩健康旅程中最堅實的夥伴，<br>
+                    讓牠們得以更健康、更快樂、更有活力地<br>
+                    與您長久相伴，共同創造更多美好時光。
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
+                <div class="media-icon">
+                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>聯絡我們</h4>
+                <div class="contact-line">
+                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>營業時段</h4>
+                <div class="contact-line">
+                    <p>週一~週六 09:00 ~ 21:00</p>
+                </div>
+                <div class="contact-line">
+                    <p>週日 休息 </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            All Rights Reserved 版權所有 &copy; 2025 寵愛基因 Pet Genic
+        </div>
+    </footer>
+</body>
+
+</html>

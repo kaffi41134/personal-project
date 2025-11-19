@@ -1,0 +1,69 @@
+    .test-container {
+        display: grid;
+        max-width: 1320px;
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        margin: auto;
+    }
+
+    .breed {
+        grid-row: 1/3;
+        grid-column: 1/2;
+
+    }
+
+    .health {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .relative {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    .comb {
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+
+    .test-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .test-container>div {
+        position: relative;
+        height: 100%;
+    }
+
+    .test-container h3 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        color: #40444D;
+        background-color: rgba(230, 227, 227, 0.8);
+        padding: 6px 8px;
+        border-radius: 10px;
+        font-size: 24px;
+        letter-spacing: 0.12em;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .comb h3 {
+        bottom: 10px;
+        right: 10px;
+        left: auto;
+        top: auto;
+    }
+
+    .breed h3 {
+        left: 10px;
+        right: auto;
+    }

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>檢測介紹 Testing Details</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
+
+        * {
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F1E7D9;
+            background-repeat: repeat;
+            background-position: 0 0;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            line-height: 1.8;
+            color: #202226;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url(imgs/bgc_pattern.webp);
+            background-repeat: repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .header-placeholder {
+            height: 150px;
+        }
+
+        .title-zh {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.2em;
+            letter-spacing: 0.12em;
+        }
+
+        .title-en {
+            font-size: 24px;
+            font-style: italic;
+            color: #989797;
+            font-family: "Alata", sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .testing-details .banner {
+            position: relative;
+        }
+
+        .testing-details h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+            z-index: 10;
+            text-align: center;
+        }
+
+        .step1,
+        .step3,
+        .step5 {
+            display: flex;
+            align-items: center;
+            max-width: 1320px;
+            margin: 200px auto;
+            gap: 90px;
+            padding: 0 10px;
+        }
+
+        .step2,
+        .step4 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            max-width: 1320px;
+            margin: 200px auto;
+            gap: 90px;
+            padding: 0 20px;
+        }
+
+        .step1,
+        .step2,
+        .step3,
+        .step4,
+        .step5 {
+            position: relative;
+        }
+
+        .bg_step1 {
+            position: absolute;
+            top: -300px;
+            left: -290px;
+        }
+
+        .bg_step2 {
+            position: absolute;
+            top: -180px;
+            left: 530px;
+        }
+
+        .bg_step3 {
+            position: absolute;
+            top: -280px;
+            left: 560px;
+        }
+
+        .bg_step4 {
+            position: absolute;
+            top: -280px;
+            left: 420px;
+        }
+
+        .bg_step5 {
+            position: absolute;
+            top: -190px;
+            left: 560px;
+        }
+
+        .bg_step1-1 {
+            position: absolute;
+            top: -200px;
+            left: 510px;
+        }
+
+        .bg_step2-1 {
+            position: absolute;
+            top: -270px;
+            left: 550px;
+        }
+
+        .bg_step3-1 {
+            position: absolute;
+            top: -220px;
+            left: 490px;
+        }
+
+        .imgs {
+            flex: 1 1 50%;
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+
+        }
+
+        .text {
+            flex: 1 1 50%;
+            align-items: center;
+        }
+
+        .text h3 {
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            color: #40444d;
+            letter-spacing: 0.12em;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .banner2 {
+            width: 100%;
+            height: auto;
+            max-width: 1920px;
+            display: block;
+        }
+
+        .test-flow {
+            text-decoration: none;
+            color: inherit;
+            font-size: 32px;
+            color: #BB6318;
+            font-weight: 500;
+            padding-left: 300px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 0.12em;
+            padding-top: 50px;
+        }
+
+        .text img {
+            max-width: 550px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="about-us.html">
+                            <img src="imgs/dog_icon.svg" alt="關於我們icon">
+                            <span>關於我們</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-details.html">
+                            <img src="imgs/cat_icon.svg" alt="檢測介紹icon">
+                            <span>檢測介紹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-items.html">
+                            <img src="imgs/bone_icon.svg" alt="檢測項目icon">
+                            <span>檢測項目</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Q&A.html">
+                            <img src="imgs/Q&A_icon.svg" alt="常見問題icon">
+                            <span>常見問題</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-details.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                            <span>會員中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+    <section class="testing-details">
+        <div class="banner">
+            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
+            <h1>
+                <span class="title-en" lang="en">Testing Details</span><br>
+                <span class="title-zh" lang="zh-TW">檢測介紹</span>
+            </h1>
+        </div>
+        <div class="test-flow"><img src="imgs/paw_icon.svg" alt="寵物腳印icon"><h2 class="test-flow_text">檢測流程</h2>
+        </div>
+        <div class="step1">
+            <img class="bg_step1" src="imgs/bg_step1.jpg" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step1.png" alt="步驟一的圖片">
+            <div class="text">
+                <h3>收到基因檢測組</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>購買後，請期待收到您毛孩的基因檢測組。<br>在開啟這趟基因旅程前，<br>請務必詳閱採集步驟說明，確保樣本品質。<br>這將是您深入了解毛孩獨特天賦與健康密碼的重要開端！
+                </p>
+            </div>
+        </div>
+        <div class="step2">
+            <img class="bg_step2" src="imgs/bg_step2.jpg" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step2.png" alt="步驟二的圖片">
+            <div class="text">
+                <h3>採集並寄回樣本</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>請依說明於家中完成毛孩口腔細胞採樣。<br>採集後，將毛刷樣本妥善置入專用包裝，<br>並請依照指示儘速寄回，<br>以確保檢體的新鮮與有效性。
+                </p>
+            </div>
+        </div>
+        <div class="step3">
+            <img class="bg_step3" src="imgs/bg_step3.jpg" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step3.png" alt="步驟三的圖片">
+            <div class="text">
+                <h3>樣本檢測分析</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>當我們收到您的樣本後，<br>將立即送至實驗室進行嚴謹分析。<br>通常，您的毛孩專屬報告會在 2-4 週內完成。<br>若遇檢測時程延誤，<br>我們將會透過電子郵件主動通知您最新進度。
+                </p>
+            </div>
+        </div>
+        <div class="step4">
+            <img class="bg_step4" src="imgs/bg_step4.jpg" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step4.png" alt="步驟四的圖片">
+            <div class="text">
+                <h3>查看檢測報告</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>當您的專屬報告完成後，<br>我們將會透過電子郵件及手機簡訊主動通知。<br>屆時，您將會收到詳盡的電子報告檔，<br>以及一份精美的紙本報告寄送給您。
+                </p>
+            </div>
+        </div>
+        <div class="step5">
+            <img class="bg_step5" src="imgs/bg_step5.jpg" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step5.png" alt="步驟五的圖片">
+            <div class="text">
+                <h3>報告專業諮詢</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>除了報告寄送，您也可選擇預約時間，<br>親臨我們的檢測中心。屆時將有<br>專業人員為您詳盡解說報告內容，<br>深入淺出地分析數據，<br>確保您完整理解毛孩的基因奧秘。
+                </p>
+            </div>
+        </div>
+        <div class="test-flow"><img src="imgs/paw_icon.svg" alt="寵物腳印icon"><span class="test-flow_text">樣本採集流程</span>
+        </div>
+        <div class="step1">           
+            <img class="imgs" src="imgs/step1-1.png" alt="步驟一的圖片">
+            <div class="text">
+                <h3>採集前準備與檢查</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>採集前準備與檢查（禁食兩小時，可飲水）<br>確認毛孩口腔內無食物殘渣，並溫和清除。<br>取出毛刷時，全程勿觸碰前端，<br>並保留包裝上的採檢序號。
+                </p>
+            </div>
+        </div>
+        <div class="step2">
+            <img class="bg_step1-1" src="imgs/bg_step1-1.png" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step2-1.png" alt="步驟二的圖片">
+            <div class="text">
+                <h3>採雙份樣本採集</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>雙份樣本採集將毛刷貼緊臉頰內側上緣，<br>在牙齦交界處輕柔旋轉15秒，採集口腔皮膜細胞。<br>隨後，立即取出第二支毛刷，<br>重複相同動作，作為備用樣本。
+                </p>
+            </div>
+        </div>
+        <div class="step3">
+            <img class="bg_step2-1" src="imgs/bg_step2-1.png" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step3-1.png" alt="步驟三的圖片">
+            <div class="text">
+                <h3>樣本乾燥與保護</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>樣本乾燥與保護兩支毛刷採集後，<br>請靜置乾燥處30分鐘自然風乾口水。<br>風乾期間請勿觸碰。<br>(乾燥是保存樣本完整性的重要步驟)
+                </p>
+            </div>
+        </div>
+        <div class="step4">
+            <img class="bg_step3-1" src="imgs/bg_step3-1.png" alt="腳印的圖片">
+            <img class="imgs" src="imgs/step4-1.png" alt="步驟四的圖片">
+            <div class="text">
+                <h3>回裝寄回與確認</h3>
+                <img src="imgs/line.svg" alt="分隔線">
+                <p>將完全風乾的兩支毛刷放回原塑膠包裝中（不需封死），<br>確保良好收納。
+                    請盡快連同採檢文件寄回，<br>以維持樣本準確性。
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
+                <div class="media-icon">
+                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>聯絡我們</h4>
+                <div class="contact-line">
+                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>營業時段</h4>
+                <div class="contact-line">
+                    <p>週一~週六 09:00 ~ 21:00</p>
+                </div>
+                <div class="contact-line">
+                    <p>週日 休息 </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            All Rights Reserved 版權所有 &copy; 2025 寵愛基因 Pet Genic
+        </div>
+    </footer>
+</body>
+
+</html>

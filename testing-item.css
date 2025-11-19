@@ -1,0 +1,202 @@
+    body {
+        background-color: #FFF7F7;
+    }
+
+    .path {
+        display: flex;
+        padding-left: 300px
+    }
+
+    .path li {
+        position: relative;
+        padding: 6px 5px;
+    }
+
+    .path li a {
+        color: #aaa;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .path li+li::before {
+        content: "/";
+        color: #aaa;
+        position: relative;
+        left: -5px;
+    }
+
+    .testing-itmes .container {
+        display: flex;
+        align-items: center;
+        margin: 100px auto;
+        max-width: 900px;
+        padding: 20px;
+        height: auto;
+        border-radius: 20px;
+        gap: 50px;
+        color: #202226;
+    }
+
+    .item-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        max-width: 450px;
+    }
+
+    .item-img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .item-text {
+        flex: 1 1 50%;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+    }
+
+    .item-text h2 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        letter-spacing: 0.12em;
+    }
+
+    .item-text ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #40444D;
+    }
+
+    .item-text li {
+        line-height: 1.6;
+    }
+
+    .add-to-cart-btn {
+        border-radius: 50px;
+        background-color: #EAB05A;
+        color: #202226;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        transition: background-color 0.3s;
+        padding: 10px 30px;
+        margin: 0;
+        flex-grow: 1;
+        max-width: 200px;
+    }
+
+    .add-to-cart-btn:hover {
+        color: #fff;
+    }
+
+    .item-text p:nth-of-type(2) {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .item-text p:nth-of-type(1) {
+        color: #40444D;
+    }
+
+    .separate {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .purchase-notice_container {
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+    .purchase-notice_content {
+        background-color: rgba(241, 212, 169, 0.5);
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .purchase-notice_content h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #202226;
+        letter-spacing: 0.12em;
+    }
+
+    .notice-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .notice-list li {
+        margin-bottom: 25px;
+        line-height: 1.8;
+    }
+
+    .notice-list h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #202226;
+        margin-bottom: 10px;
+        letter-spacing: 0.08em;
+    }
+
+    .notice-list p {
+        font-size: 16px;
+        color: #40444D;
+        margin: 0;
+        line-height: 1.8;
+        padding-left: 33px;
+    }
+
+    .count_button {
+        display: flex;
+        align-items: stretch;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .number_input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        padding: 8px 5px;
+        -webkit-appearance: none;
+        margin: 0;
+        appearance: none;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .count_button button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .count_button button svg {
+        width: 15px;
+        height: 15px;
+        fill: #202226;
+    }

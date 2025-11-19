@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>檢測項目 Testing Items</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="banner2.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            background-color: #FFF7F7;
+        }
+
+        .test-flow {
+            text-decoration: none;
+            color: inherit;
+            font-size: 32px;
+            color: #BB6318;
+            font-weight: 500;
+            padding-left: 300px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 0.12em;
+            padding-top: 50px;
+        }
+
+        .container img {
+            max-width: 310px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 24px;
+            letter-spacing: 0.12em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .product a {
+            text-decoration: none;
+            color: inherit;
+            transition: none;
+            display: block;
+        }
+
+        .product p {
+            font-size: 24px;
+            color: #40444D;
+            font-weight: 500;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 100px auto;
+            gap: 70px;
+            max-width: 1320px;
+            padding: 0 10px;
+        }
+
+        .cover {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .cover img:first-child {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .product .search_icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.5);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product .search_icon img {
+            width: 50%;
+            height: auto;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 5;
+            border-radius: 20px;
+        }
+
+        .product a:hover .cover img:first-child {
+            transform: scale(1.05);
+            filter: brightness(0.8);
+        }
+
+        .product a:hover .cover::before {
+            opacity: 1;
+        }
+
+        .product a:hover .search_icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .product a:hover h3 {
+            text-decoration: underline;
+            color: #D3701C;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="about-us.html">
+                            <img src="imgs/dog_icon.svg" alt="關於我們icon">
+                            <span>關於我們</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-details.html">
+                            <img src="imgs/cat_icon.svg" alt="檢測介紹icon">
+                            <span>檢測介紹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-items.html">
+                            <img src="imgs/bone_icon.svg" alt="檢測項目icon">
+                            <span>檢測項目</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Q&A.html">
+                            <img src="imgs/Q&A_icon.svg" alt="常見問題icon">
+                            <span>常見問題</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-items.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                            <span>會員中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+    <section class="testing-items">
+        <div class="banner">
+            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
+            <h1>
+                <span class="title-en" lang="en">Testing Items</span><br>
+                <span class="title-zh" lang="zh-TW">檢測項目</span>
+            </h1>
+        </div>
+        <div class="test-flow"><img src="imgs/paw_icon.svg" alt="寵物腳印icon">
+            <h2 id="dogtest-items" class="test-flow_text">狗狗基因檢測項目</h2>
+        </div>
+        <div class="container">
+            <div class="product">
+                <a href="dogtest-bred.html">
+                    <div class="cover">
+                        <img src="imgs/bred_dogtest.png" alt="犬隻品種基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>品種DNA檢測</h3>
+                </a>
+                <p>NT$ 2,000</p>
+            </div>
+            <img src="imgs/line-row.png" alt="分隔線">
+            <div class="product">
+                <a href="dogtest-health.html">
+                    <div class="cover">
+                        <img src="imgs/health_dogtest.png" alt="犬隻健康基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>健康DNA檢測</h3>
+                </a>
+                <p>NT$ 2,200</p>
+            </div>
+            <img src="imgs/line-row.png" alt="分隔線">
+            <div class="product">
+                <a href="dogtest-relatives.html">
+                    <div class="cover">
+                        <img src="imgs/relatives_dogtest.png" alt="犬隻親戚基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>親戚DNA檢測</h3>
+                </a>
+                <p>NT$ 2,500</p>
+            </div>
+            <div class="product">
+                <a href="dogtest-bred+health.html">
+                    <div class="cover">
+                        <img src="imgs/bred+health_dogtest.png" alt="犬隻品種+健康基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>品種+健康DNA測試</h3>
+                </a>
+                <p>NT$ 3,800</p>
+            </div>
+            <img src="imgs/line-row.png" alt="分隔線">
+        </div>
+        <div class="test-flow"><img src="imgs/catpaw_icon.svg" alt="寵物腳印icon">
+            <h2 id="cattest-items" class="test-flow_text">貓咪基因檢測項目</h2>
+        </div>
+        <div class="container">
+            <div class="product">
+                <a href="cattest-bred.html">
+                    <div class="cover">
+                        <img src="imgs/bred_cattest.png" alt="貓咪品種基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>品種DNA檢測</h3>
+                </a>
+                <p>NT$ 2,300</p>
+            </div>
+            <img src="imgs/line-row.png" alt="分隔線">
+            <div class="product">
+                <a href="cattest-health.html">
+                    <div class="cover">
+                        <img src="imgs/health_cattest.png" alt="貓咪健康基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>健康DNA檢測</h3>
+                </a>
+                <p>NT$ 2,600</p>
+            </div>
+            <img src="imgs/line-row.png" alt="分隔線">
+            <div class="product">
+                <a href="cattest-relatives.html">
+                    <div class="cover">
+                        <img src="imgs/relatives_cattest.png" alt="貓咪親戚基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>親戚DNA檢測</h3>
+                </a>
+                <p>NT$ 2,800</p>
+            </div>
+            <div class="product">
+                <a href="cattest-bred+health.html">
+                    <div class="cover"><img src="imgs/bred+health_cattest.png" alt="貓咪品種+健康基因檢測套組的完整包裝照片">
+                        <div class="search_icon"><img src="imgs/search_icon.svg" alt="放大鏡icon"></div>
+                    </div>
+                    <h3>品種+健康DNA測試</h3>
+                </a>
+                <p>NT$ 4,200</p>
+            </div>
+            <img src="imgs/line-row.png" alt="分隔線">
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
+                <div class="media-icon">
+                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>聯絡我們</h4>
+                <div class="contact-line">
+                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>營業時段</h4>
+                <div class="contact-line">
+                    <p>週一~週六 09:00 ~ 21:00</p>
+                </div>
+                <div class="contact-line">
+                    <p>週日 休息 </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            All Rights Reserved 版權所有 &copy; 2025 寵愛基因 Pet Genic
+        </div>
+    </footer>
+
+</body>
+
+</html>

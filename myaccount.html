@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心 My Account</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
+
+        * {
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 247, 224, 0.7);
+            background-repeat: repeat;
+            background-position: 0 0;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            line-height: 1.8;
+            color: #202226;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url(imgs/bgc_pattern.webp);
+            background-repeat: repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .header-placeholder {
+            height: 150px;
+        }
+
+        .title-zh {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.2em;
+            letter-spacing: 0.12em;
+        }
+
+        .title-en {
+            font-size: 24px;
+            font-style: italic;
+            color: #989797;
+            font-family: "Alata", sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .about-us .banner {
+            position: relative;
+        }
+
+        .about-us h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+            z-index: 10;
+            text-align: center;
+        }
+
+        .origin,
+        .proudof {
+            display: flex;
+            align-items: center;
+            max-width: 1320px;
+            margin: 200px auto;
+            gap: 90px;
+            padding: 0 10px;
+        }
+
+        .imgs {
+            flex: 1 1 50%;
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            flex: 1 1 50%;
+            align-self: flex-start;
+            padding-top: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #40444d;
+            letter-spacing: 0.12em;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .brand-name,
+        .selection {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            max-width: 1320px;
+            margin: 200px auto;
+            gap: 90px;
+            padding: 0 10px;
+        }
+
+        .banner2 {
+            width: 100%;
+            height: auto;
+            max-width: 1920px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="about-us.html">
+                            <img src="imgs/dog_icon.svg" alt="關於我們icon">
+                            <span>關於我們</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-details.html">
+                            <img src="imgs/cat_icon.svg" alt="檢測介紹icon">
+                            <span>檢測介紹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testing-items.html">
+                            <img src="imgs/bone_icon.svg" alt="檢測項目icon">
+                            <span>檢測項目</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Q&A.html">
+                            <img src="imgs/Q&A_icon.svg" alt="常見問題icon">
+                            <span>常見問題</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                            <span>會員中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+    <section class="myaccount">
+        <div class="banner">
+            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
+            <h1>
+                <span class="title-en" lang="en">My Account</span><br>
+                <span class="title-zh" lang="zh-TW">會員中心</span>
+            </h1>
+        </div>
+        <div class="member">
+            <form class="form">
+                <div class="log">
+                    <h2>會員註冊</h2>
+                    <h2>會員登入</h2>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
+                <div class="media-icon">
+                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>聯絡我們</h4>
+                <div class="contact-line">
+                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h4>營業時段</h4>
+                <div class="contact-line">
+                    <p>週一~週六 09:00 ~ 21:00</p>
+                </div>
+                <div class="contact-line">
+                    <p>週日 休息 </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            All Rights Reserved 版權所有 &copy; 2025 寵愛基因 Pet Genic
+        </div>
+    </footer>
+</body>
+
+</html>
