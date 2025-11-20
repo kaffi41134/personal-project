@@ -5,13 +5,13 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
-        margin: auto;
+        margin: 0 auto;
+        width: 100vh;
     }
 
     .breed {
         grid-row: 1/3;
         grid-column: 1/2;
-
     }
 
     .health {
@@ -36,7 +36,7 @@
         border-radius: 20px;
     }
 
-    .test-container>div {
+    .test-container div {
         position: relative;
         height: 100%;
     }
@@ -48,12 +48,11 @@
         z-index: 2;
         color: #40444D;
         background-color: rgba(230, 227, 227, 0.8);
-        padding: 6px 8px;
+        padding: 0 8px;
         border-radius: 10px;
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: 0.12em;
         font-weight: 500;
-        text-align: center;
     }
 
     .comb h3 {

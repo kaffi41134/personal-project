@@ -8,131 +8,127 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="banner2.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
-
-        * {
-            font-family: inherit;
-            box-sizing: border-box;
-        }
-
         body {
-            background-color: rgb(255, 247, 224, 0.7);
-            background-repeat: repeat;
-            background-position: 0 0;
-            min-height: 100vh;
-            position: relative;
-            z-index: 1;
-            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-variation-settings:
-                "wdth" 100;
-            line-height: 1.8;
-            color: #202226;
+            background-color: #FFF7E0;
         }
 
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: url(imgs/bgc_pattern.webp);
-            background-repeat: repeat;
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        .header-placeholder {
-            height: 150px;
-        }
-
-        .title-zh {
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 1.2em;
-            letter-spacing: 0.12em;
-        }
-
-        .title-en {
+        .myaccount h2 {
             font-size: 24px;
-            font-style: italic;
-            color: #989797;
-            font-family: "Alata", sans-serif;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-        }
-
-        .about-us .banner {
-            position: relative;
-        }
-
-        .about-us h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 30%);
-            z-index: 10;
-            text-align: center;
-        }
-
-        .origin,
-        .proudof {
-            display: flex;
-            align-items: center;
-            max-width: 1320px;
-            margin: 200px auto;
-            gap: 90px;
-            padding: 0 10px;
-        }
-
-        .imgs {
-            flex: 1 1 50%;
-            width: 100%;
-            max-width: 550px;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .text {
-            flex: 1 1 50%;
-            align-self: flex-start;
-            padding-top: 20px;
-        }
-
-        h2 {
-            font-size: 32px;
-            font-weight: 500;
             letter-spacing: 0.12em;
+        }
+
+        .log {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #ffffff;
+            width: 100%;
+            border-radius: 100px;
             margin-bottom: 10px;
         }
 
-        p {
-            color: #40444d;
-            letter-spacing: 0.12em;
-            font-size: 20px;
-            margin-top: 10px;
+        .member {
+            width: 450px;
+            height: 500px;
+            margin: 0 auto;
+            /* background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px); */
+            border-radius: 20px;
+            position: relative;
         }
 
-        .brand-name,
-        .selection {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            max-width: 1320px;
-            margin: 200px auto;
-            gap: 90px;
-            padding: 0 10px;
-        }
-
-        .banner2 {
+        .form input {
             width: 100%;
-            height: auto;
-            max-width: 1920px;
-            display: block;
+            border: 1px solid #aaa;
+            border-radius: 50px;
+            line-height: 3;
+            padding-left: 15px;
+        }
+
+        .group {
+            width: 445px;
+            margin: 20px 0;
+        }
+
+        label {
+            line-height: 2;
+            font-size: 18px;
+            letter-spacing: 0.12em;
+        }
+
+        .form .btn {
+            font-size: 24px;
+            letter-spacing: 0.12em;
+            line-height: 2;
+            border: none;
+            background-color: #EAB05A;
+            border-radius: 50px;
+            width: 100%;
+            margin-top: 30px;
+            font-family: inherit;
+            color: inherit;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .log a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .log a:hover {
+            background-color: #EAB05A;
+            border-radius: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .paw1 {
+            position: absolute;
+            transform: rotate(-35deg);
+            right: 550px;
+            top: 0;
+        }
+
+        .paw2 {
+            position: absolute;
+            transform: rotate(-10deg);
+            right: 600px;
+            top: 200px;
+        }
+
+        .paw3 {
+            position: absolute;
+            transform: rotate(10deg);
+            right: 550px;
+            top: 450px;
+        }
+
+        .paw4 {
+            position: absolute;
+            transform: rotate(10deg);
+            left: 600px;
+            top: 0;
+        }
+
+        .paw5 {
+            position: absolute;
+            transform: rotate(35deg);
+            left: 650px;
+            top: 200px;
+        }
+
+        .paw6 {
+            position: absolute;
+            transform: rotate(-5deg);
+            left: 580px;
+            top: 450px;
         }
     </style>
 </head>
@@ -168,7 +164,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                        <a href="myaccount.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
                             <span>會員中心</span>
                         </a>
                     </li>
@@ -177,7 +173,7 @@
         </div>
     </header>
     <div class="header-placeholder"></div>
-    <section class="myaccount">
+    <main>
         <div class="banner">
             <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
             <h1>
@@ -185,12 +181,37 @@
                 <span class="title-zh" lang="zh-TW">會員中心</span>
             </h1>
         </div>
+    </main>
+    <section class="myaccount">
         <div class="member">
+            <img class="paw1" src="imgs/bg_paw.svg" alt="寵物腳印">
+            <img class="paw2" src="imgs/bg_paw.svg" alt="寵物腳印">
+            <img class="paw3" src="imgs/bg_paw.svg" alt="寵物腳印">
+            <img class="paw4" src="imgs/bg_paw.svg" alt="寵物腳印">
+            <img class="paw5" src="imgs/bg_paw.svg" alt="寵物腳印">
+            <img class="paw6" src="imgs/bg_paw.svg" alt="寵物腳印">
             <form class="form">
                 <div class="log">
-                    <h2>會員註冊</h2>
-                    <h2>會員登入</h2>
+                    <a href="#">
+                        <h2 class="register">會員註冊</h2>
+                    </a>
+                    <a href="#">
+                        <h2>會員登入</h2>
+                    </a>
                 </div>
+                <div class="group">
+                    <label for="user_email">信箱</label>
+                    <input type="email" name="" id="user_email">
+                </div>
+                <div class="group">
+                    <label for="user_account">帳號</label>
+                    <input type="text" name="" id="user_account">
+                </div>
+                <div class="group">
+                    <label for="user_psw">密碼</label>
+                    <input type="password" name="" id="user_psw">
+                </div>
+                <button class="btn">註冊</button>
             </form>
         </div>
     </section>

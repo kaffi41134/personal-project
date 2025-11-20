@@ -7,65 +7,28 @@
     <title>寵愛基因 Pet Genic</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="promise.css">
     <link rel="stylesheet" href="product-page.css">
     <link rel="stylesheet" href="test-page.css">
     <link rel="stylesheet" href="reviews.css">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
-
     <style>
-        @import url(https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap);
-
-        * {
-            font-family: inherit;
-        }
-
         body {
             background-color: #EAE0D4;
-            background-repeat: repeat;
-            background-position: 0 0;
-            min-height: 100vh;
-            position: relative;
-            z-index: 1;
-            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-variation-settings:
-                "wdth" 100;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: url(imgs/bgc_pattern.webp);
-            background-repeat: repeat;
-            opacity: 0.3;
-            z-index: -1;
         }
 
         h2 {
-            font-size: 36px !important;
-            line-height: 1.2em !important;
             margin-top: 100px !important;
-            height: 100px !important;
-            letter-spacing: 0.05em !important;
-            color: #202226 !important;
+            margin-bottom: 50px !important;
             text-align: center !important;
-            padding: 5px 15px !important;
-            font-weight: 500 !important;
         }
 
         .index {
-                background-image: url(imgs/blob_1.png), url(imgs/blob_2.png), url(imgs/blob_3.png);
-                background-position: -400px 400px, right -400px top 1200px, -350px 2000px;
-                background-repeat: no-repeat, no-repeat, no-repeat;
-            }
-
+            background-image: url(imgs/blob_1.png), url(imgs/blob_2.png), url(imgs/blob_3.png);
+            background-position: -400px 300px, right -400px top 1000px, -350px 1800px;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+        }
     </style>
 </head>
 
@@ -100,7 +63,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="testing-details.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                        <a href="myaccount.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
                             <span>會員中心</span>
                         </a>
                     </li>
@@ -109,7 +72,6 @@
         </div>
     </header>
     <div class="header-placeholder"></div>
-
     <section class="main-banner">
         <div class="banner-container">
             <div class="banner-left">
@@ -119,77 +81,67 @@
                 </div>
                 <img class="banner-cat" src="imgs/banner_cat-removebg-preview.png" alt="橘貓圖片">
             </div>
-
             <div class="banner-right">
                 <img class="banner-building" src="imgs/banner.png" alt="建築物外觀">
             </div>
         </div>
     </section>
-    <div class="index">
+    <a href="#" class="quick-consult">
+        快速諮詢
+    </a>
+    <main class="index">
         <section class="promise-page">
             <h2>選擇我們的四大安心保證</h2>
-            <div>
-                <h3>檢測過程不索取寵物照片或品種資料，我們用數據結果<br>讓您確信服務的公正與價值。</h3>
-            </div>
-            <div class="wrap">
+            <p class="p1">檢測過程不索取寵物照片或品種資料，我們用數據結果讓您確信服務的公正與價值。</p>
+            <div class="container">
                 <div class="item">
                     <img src="imgs/reportupgate_icon.svg" alt="終身數據庫追蹤升級">
-                    <h4>終身數據庫追蹤升級</h4>
-                    <p>檢測結果永久加密安全儲存，確保資訊無虞；數據庫一有更新，您的報告即自動享有免費升級。</p>
+                    <h3>終身數據庫追蹤升級</h3>
+                    <p>檢測結果永久加密安全儲存，確保資訊無虞；數據庫一有更新，您的報告即自動享有<br>免費升級。</p>
                 </div>
                 <div class="item">
                     <img src="imgs/accuracy_icon.svg" alt="國際級99.9%準確度">
-                    <h4>國際級99.9%準確度</h4>
+                    <h3>國際級99.9%準確度</h3>
                     <p>實驗室獲ISO認證高通量定序為基底；保證結果精準，絕不誤判遺傳風險。</p>
                 </div>
                 <div class="item">
                     <img src="imgs/report_icon.svg" alt="獸醫級報告與諮詢">
-                    <h4>獸醫級報告與諮詢</h4>
+                    <h3>獸醫級報告與諮詢</h3>
                     <p>專業獸醫審核，報告簽署；提供一對一諮詢服務，協助您制定實用的照護方案。</p>
                 </div>
                 <div class="item">
                     <img src="imgs/heart_icon.svg" alt="簡便採樣與全程保障">
-                    <h4>簡便採樣與全程保障</h4>
+                    <h3>簡便採樣與全程保障</h3>
                     <p>採樣簡單，五分鐘在家無痛完成；全程低溫物流追蹤，確保檢體安全並順利抵達。</p>
                 </div>
             </div>
             <div class="btn-container">
-                <button>基因檢測
-                    <span>一次搞定➜</span>
-                </button>
+                <button>基因檢測 一次搞定➜</button>
             </div>
         </section>
-        <a href="#" class="quick-consult-btn">
-            快速諮詢
-        </a>
-
         <section class="product-page">
             <h2>熱門基因檢測組</h2>
             <div class="product-list">
                 <div class="product-container">
-                    <div class="item-img">
-                        <img src="imgs/bred+health_dogtest.png" alt="犬隻基因採樣套組的完整包裝照片">
-                    </div>
+                    <img src="imgs/bred+health_dogtest.png" alt="犬隻品種+健康基因採樣套組的完整包裝照片">
                     <div class="item-text">
                         <h3>狗狗品種+健康DNA測試</h3>
-                        <p>取得獨家定制報告，全面瞭解牠的<br>健康與習性。</p>
+                        <p class="text">取得獨家定制報告，全面瞭解牠的<br>健康與習性。</p>
                         <ul>
                             <li>• 330多個品種</li>
                             <li>• 280+ 健康指標</li>
                             <li>• 30+ 特徵標記</li>
                             <li>• 藥物敏感性風險評估</li>
                         </ul>
-                        <p>NT$ 3,800</p>
+                        <p class="price">NT$ 3,800</p>
                         <button>加入購物車</button>
                     </div>
                 </div>
                 <div class="product-container">
-                    <div class="item-img">
-                        <img src="imgs/bred+health_cattest.png" alt="貓咪基因採樣套組的完整包裝照片">
-                    </div>
+                    <img src="imgs/bred+health_cattest.png" alt="貓咪品種+健康基因採樣套組的完整包裝照片">
                     <div class="item-text">
                         <h3>貓咪品種+健康DNA測試</h3>
-                        <p>解鎖貓咪基因，讀懂牠的獨特奧秘。</p>
+                        <p class="text">解鎖貓咪基因，讀懂牠的獨特奧秘。</p>
                         <ul>
                             <li>• 21個品種</li>
                             <li>• 64個遺傳健康標記</li>
@@ -197,7 +149,7 @@
                             <li>• 口腔健康報告</li>
                             <li>• 血型</li>
                         </ul>
-                        <p>NT$ 4,200</p>
+                        <p class="price">NT$ 4,200</p>
                         <button>加入購物車</button>
                     </div>
                 </div>
@@ -206,51 +158,45 @@
         <section class="test-page">
             <h2>基因檢測種類</h2>
             <div class="test-container">
-                <div class="breed"><a href="#"><img src="imgs/grid_bred.jpg" alt="品種">
+                <div class="breed"><a href="testing-items.html"><img src="imgs/grid_bred.jpg" alt="品種">
                         <h3>品種</h3>
                     </a></div>
-                <div class="health"><a href="#"><img src="imgs/grid_health.jpg" alt="健康">
+                <div class="health"><a href="testing-items.html"><img src="imgs/grid_health.jpg" alt="健康">
                         <h3>健康</h3>
                     </a></div>
-                <div class="relative"><a href="#"><img src="imgs/grid_relative.jpg" alt="親戚">
+                <div class="relative"><a href="testing-items.html"><img src="imgs/grid_relative.jpg" alt="親戚">
                         <h3>親戚</h3>
                     </a></div>
-                <div class="comb"><a href="#"><img src="imgs/grid_comb.jpg" alt="組合">
+                <div class="comb"><a href="testing-items.html"><img src="imgs/grid_comb.jpg" alt="組合">
                         <h3>組合</h3>
                     </a></div>
             </div>
         </section>
-        <section class="reviews-section">
+        <section class="reviews-page">
             <h2>客戶真實回饋</h2>
-
             <div class="reviews-content">
-
                 <div class="feedback-card">
                     <div class="rating">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty">☆</span>
+                        <span>★</span><span>★</span><span>★</span><span>★</span>
+                        <span class="empty">☆</span></div>
+                        <p class="quote">
+                            「一直以為米克斯是土狗，檢測後才知道她有 4 種血統！更重要的是，我們提早發現了關節退傳風險，現在能搭配專屬營養品預防。流程簡單又有幫助，讓我覺更懂得怎麼愛她了！💖🐶」
+                        </p>
                     </div>
-
-                    <p class="author">Kelly 和她的米克斯</p>
-
-                    <p class="quote">
-                        「一直以為米克斯是土狗，檢測後才知道她有 4 種血統！更重要的是，我們提早發現了關節退傳風險，現在能搭配專屬營養品預防。流程簡單又有幫助，讓我覺更懂得怎麼愛她了！💖🐶」
-                    </p>
-                </div>
-
-                <div class="avatars-area">
-                    <div class="avatar main-avatar">
-                        <img src="imgs/main_user.jpg" alt="主要用戶 Kelly">
+                    <div class="avatars-area">
+                        <div class="avatar main-avatar">
+                            <img src="imgs/main_user.jpg" alt="主要用戶 Kelly">
+                        </div>
+                        <div class="avatar avatar-1"><img src="imgs/avatar_1.jpg" alt="用戶1"></div>
+                        <div class="avatar avatar-2"><img src="imgs/avatar_2.jpg" alt="用戶2"></div>
+                        <div class="avatar avatar-3"><img src="imgs/avatar_3.jpg" alt="用戶3"></div>
+                        <div class="avatar avatar-4"><img src="imgs/avatar_4.jpg" alt="用戶4"></div>
+                        <div class="avatar avatar-5"><img src="imgs/avatar_5.jpg" alt="用戶5"></div>
+                        <div class="avatar avatar-6"><img src="imgs/avatar_6.jpg" alt="用戶6"></div>
                     </div>
-                    <div class="avatar avatar-1"><img src="imgs/avatar_1.jpg" alt="用戶1"></div>
-                    <div class="avatar avatar-2"><img src="imgs/avatar_2.jpg" alt="用戶2"></div>
-                    <div class="avatar avatar-3"><img src="imgs/avatar_3.jpg" alt="用戶3"></div>
-                    <div class="avatar avatar-4"><img src="imgs/avatar_4.jpg" alt="用戶4"></div>
-                    <div class="avatar avatar-5"><img src="imgs/avatar_5.jpg" alt="用戶5"></div>
-                    <div class="avatar avatar-6"><img src="imgs/avatar_6.jpg" alt="用戶6"></div>
                 </div>
-            </div>
         </section>
-    </div>
+    </main>
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-item">

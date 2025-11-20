@@ -1,58 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap');
 
-        .header-container {
-            display: flex;
-            height: 150px;
-            align-items: center;
-            justify-content: space-between;
-        }
+* {
+    font-family: inherit;
+}
 
-        .main-header {
-            background-color: #dec4a1;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+body {
+    background-repeat: repeat;
+    background-position: 0 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    font-family: "Noto Sans TC";
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #202226;
+    line-height: 1.8;
+}
 
-        .main-nav span {
-            color: #40444d;
-            text-decoration: none;
-            text-align: center;
-            letter-spacing: 0.1em;
-        }
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(imgs/bgc_pattern.webp);
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
 
-        .main-nav ul {
-            display: flex;
-        }
+h2 {
+    font-size: 36px;    
+    letter-spacing: 0.12em;
+    padding: 5px;
+    font-weight: 500;
+}
 
-        .main-nav a {
-            display: flex;
-            align-items: center;
-            padding: 8px 12px;
-            text-decoration: none;
-        }
+.header-container {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        .header-container .logo {
-            height: 90px;
-            width: auto;
-            margin-left: 30px;
-        }
+.main-header {
+    background-color: #dec4a1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        .main-nav li {
-            margin-right: 40px;
-        }
+.main-nav span {
+    color: #40444d;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
 
-        .main-nav img {
-            margin-right: 10px;
-        }
+.main-nav ul {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
 
-        .main-nav ul li:hover span {
-            color: white;
-            transition: color 0.3s ease;
-        }
+.main-nav a {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    gap: 10px;
+}
 
-        .main-nav ul li:hover img {
-            filter: brightness(0) invert(1);
-            transition: filter 0.3s ease;
-        }
+.header-container .logo {
+    height: 90px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.main-nav ul li:hover span {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li:hover img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.header-placeholder {
+    height: 150px;
+}

@@ -1,75 +1,35 @@
-        @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
-        
-        * {
-            font-family: inherit;
-            box-sizing: border-box;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
 
-        body {
-            /* background-color: rgb(255, 247, 224, 0.7); */
-            background-repeat: repeat;
-            background-position: 0 0;
-            min-height: 100vh;
-            position: relative;
-            z-index: 1;
-            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-variation-settings:
-                "wdth" 100;
-            line-height: 1.8;
-            color: #202226;
-        }
+.title-en {
+    font-size: 24px;
+    font-style: italic;
+    color: #989797;
+    font-family: Alata;
+    letter-spacing: 0.05em;
+}
 
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: url(imgs/bgc_pattern.webp);
-            background-repeat: repeat;
-            opacity: 0.3;
-            z-index: -1;
-        }
+.title-zh {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.12em;    
+}
 
-        .header-placeholder {
-            height: 150px;
-        }
+.banner {
+    position: relative;
+}
 
-        .title-zh {
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 1.2em;
-            letter-spacing: 0.12em;
-        }
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    z-index: 10;
+    text-align: center;
+}
 
-        .title-en {
-            font-size: 24px;
-            font-style: italic;
-            color: #989797;
-            font-family: "Alata", sans-serif;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-        }
-
-        .banner {
-            position: relative;
-        }
-
-        h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 30%);
-            z-index: 10;
-            text-align: center;
-        }
-
-        .banner2 {
-            width: 100%;
-            height: auto;
-            max-width: 1920px;
-            display: block;
-        }
+.banner2 {
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+}

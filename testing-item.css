@@ -2,9 +2,13 @@
         background-color: #FFF7F7;
     }
 
+    .testing-itmes {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
     .path {
         display: flex;
-        padding-left: 300px
     }
 
     .path li {
@@ -34,19 +38,16 @@
         height: auto;
         border-radius: 20px;
         gap: 50px;
-        color: #202226;
     }
 
     .item-img img {
-        width: 100%;
         height: auto;
         border-radius: 20px;
         max-width: 450px;
     }
 
     .item-img {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 1 1 50%;
     }
 
     .item-text {
@@ -63,21 +64,14 @@
     }
 
     .item-text ul {
-        list-style-type: none;
         padding-left: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding: 10px 0;
         color: #40444D;
-    }
-
-    .item-text li {
-        line-height: 1.6;
     }
 
     .add-to-cart-btn {
         border-radius: 50px;
         background-color: #EAB05A;
-        color: #202226;
         border: none;
         cursor: pointer;
         font-size: 18px;
@@ -85,7 +79,6 @@
         letter-spacing: 0.12em;
         transition: background-color 0.3s;
         padding: 10px 30px;
-        margin: 0;
         flex-grow: 1;
         max-width: 200px;
     }
@@ -94,10 +87,9 @@
         color: #fff;
     }
 
-    .item-text p:nth-of-type(2) {
+    .item-text .price {
         font-size: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0;
         font-weight: 500;
     }
 
@@ -108,14 +100,7 @@
     .separate {
         display: block;
         margin: 0 auto;
-        width: 100%;
         max-width: 900px;
-    }
-
-    .purchase-notice_container {
-        max-width: 800px;
-        margin: 100px auto;
-        padding: 20px;
     }
 
     .purchase-notice_content {
@@ -123,6 +108,8 @@
         padding: 50px;
         border-radius: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        max-width: 700px;
+        margin: 100px auto;
     }
 
     .purchase-notice_content h3 {
@@ -130,35 +117,30 @@
         font-weight: bold;
         text-align: center;
         margin-bottom: 50px;
-        color: #202226;
         letter-spacing: 0.12em;
     }
 
     .notice-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 600px;
     }
 
     .notice-list li {
         margin-bottom: 25px;
-        line-height: 1.8;
     }
 
     .notice-list h4 {
         font-size: 20px;
         font-weight: bold;
-        color: #202226;
         margin-bottom: 10px;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.12em;
     }
 
     .notice-list p {
         font-size: 16px;
         color: #40444D;
-        margin: 0;
-        line-height: 1.8;
         padding-left: 33px;
+        letter-spacing: 0.12em;
     }
 
     .count_button {

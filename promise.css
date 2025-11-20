@@ -1,57 +1,50 @@
-.promise-page .wrap {
+.promise-page {
     max-width: 1320px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap
+    margin: 0 auto;
 }
 
-.promise-page .wrap .item {
+.promise-page .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promise-page .container .item {
     width: calc(25% - 30px);
     margin: 0 15px;
     text-align: center;
 }
 
-.wrap .item img {
+.container .item img {
     width: 40px;
     height: 40px;
     display: block;
     margin: 0 auto 20px auto;
 }
 
-.wrap .item h4 {
+.container .item h3 {
     font-size: 24px;
-    line-height: 1.4em;
     margin: 10px 0;
     letter-spacing: 0.12em;
-    color: #202226;
     font-weight: 500;
 }
 
-.wrap .item p {
+.container .item p {
     font-size: 18px;
-    line-height: 1.8em;
     letter-spacing: 0.12em;
     color: #40444D;
 }
 
-.promise-page h3 {
-    font-size: 24px;
-    line-height: 1.4em;
+.p1 {
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     letter-spacing: 0.12em;
     color: #40444D;
-}
-
-.wrap+div,
-.wrap+div+div {
-    width: 100%;
 }
 
 .btn-container {
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin: 60px 0;
 }
 
 .btn-container button {
@@ -61,9 +54,8 @@
     border-radius: 50px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.12em;
-    line-height: 54px;
     padding: 0 30px;
     font-weight: 500;
 }

@@ -8,131 +8,63 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="banner2.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
-
-        * {
-            font-family: inherit;
-            box-sizing: border-box;
-        }
-
         body {
-            background-color: rgb(255, 247, 224, 0.7);
-            background-repeat: repeat;
-            background-position: 0 0;
-            min-height: 100vh;
-            position: relative;
-            z-index: 1;
-            font-family: "Noto Sans", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-variation-settings:
-                "wdth" 100;
-            line-height: 1.8;
-            color: #202226;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: url(imgs/bgc_pattern.webp);
-            background-repeat: repeat;
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        .header-placeholder {
-            height: 150px;
-        }
-
-        .title-zh {
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 1.2em;
-            letter-spacing: 0.12em;
-        }
-
-        .title-en {
-            font-size: 24px;
-            font-style: italic;
-            color: #989797;
-            font-family: "Alata", sans-serif;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-        }
-
-        .about-us .banner {
-            position: relative;
-        }
-
-        .about-us h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 30%);
-            z-index: 10;
-            text-align: center;
+            background-color: rgba(255, 247, 224, 0.7);
         }
 
         .origin,
         .proudof {
             display: flex;
-            align-items: center;
-            max-width: 1320px;
+            align-items: flex-start;
+            max-width: 1280px;
+            height: auto;
             margin: 200px auto;
             gap: 90px;
-            padding: 0 10px;
         }
 
-        .imgs {
-            flex: 1 1 50%;
-            width: 100%;
-            max-width: 550px;
+        .about-us .imgs {
+            width: 50%;
             height: auto;
             border-radius: 20px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        .text {
-            flex: 1 1 50%;
-            align-self: flex-start;
+        .about-us .text {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
             padding-top: 20px;
         }
 
-        .text h2 {
+        .about-us .title {
             font-size: 32px;
             font-weight: 500;
             letter-spacing: 0.12em;
-            margin-bottom: 10px;
         }
 
-        .text p {
+        .about-us .reason {
             color: #40444d;
             letter-spacing: 0.12em;
             font-size: 20px;
-            margin-top: 10px;
         }
 
         .brand-name,
         .selection {
             display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            max-width: 1320px;
+            align-items: flex-start;
+            max-width: 1280px;
+            height: auto;
             margin: 200px auto;
-            gap: 90px;
-            padding: 0 10px;
+            gap: 80px;
+            flex-direction: row-reverse;
         }
 
-        .banner2 {
-            width: 100%;
-            height: auto;
-            max-width: 1920px;
-            display: block;
+        .about-us .line {
+            width: 550px;
         }
     </style>
 </head>
@@ -168,7 +100,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                        <a href="myaccount.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
                             <span>會員中心</span>
                         </a>
                     </li>
@@ -177,7 +109,7 @@
         </div>
     </header>
     <div class="header-placeholder"></div>
-    <section class="about-us">
+    <main>
         <div class="banner">
             <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
             <h1>
@@ -185,12 +117,14 @@
                 <span class="title-zh" lang="zh-TW">關於我們</span>
             </h1>
         </div>
+    </main>
+    <section class="about-us">
         <div class="origin">
             <img class="imgs" src="imgs/banner.png" alt="建築物外觀">
             <div class="text">
-                <h2>寵愛基因Pet Genic的緣起</h2>
-                <img src="imgs/line.svg" alt="分隔線">
-                <p>深植於我們對每一位毛小孩無條件的深切關愛。<br>
+                <h2 class="title">寵愛基因Pet Genic的緣起</h2>
+                <img class="line" src="imgs/line.svg" alt="分隔線">
+                <p class="reason">深植於我們對每一位毛小孩無條件的深切關愛。<br>
                     我們深信，每隻寵物都是獨一無二的生命，<br>
                     牠們的健康與幸福，值得最科學、最細緻的守護。<br>
                     正是這份初心，驅動我們匯聚全球尖端基因科技<br>
@@ -202,9 +136,9 @@
         <div class="brand-name">
             <img class="imgs" src="imgs/brand-name.png" alt="品牌名稱由來的圖片">
             <div class="text">
-                <h2>我們的品牌名稱由來</h2>
-                <img src="imgs/line.svg" alt="分隔線">
-                <p>深寵愛基因 Pet Genic不僅巧妙結合了「Pet (寵物)」與<br>
+                <h2 class="title">我們的品牌名稱由來</h2>
+                <img class="line" src="imgs/line.svg" alt="分隔線">
+                <p class="reason">寵愛基因 Pet Genic不僅巧妙結合了「Pet (寵物)」與<br>
                     「Genetics (基因學)」的核心「Genic」，<br>
                     更深刻地彰顯了我們以基因科技寵愛毛孩的品牌理念。<br>
                     這不只是一個名字，更是我們對科學承諾與深情關懷<br>
@@ -215,9 +149,9 @@
         <div class="proudof">
             <img class="imgs" src="imgs/proudof.png" alt="實驗室內部">
             <div class="text">
-                <h2>我們引以為傲的事</h2>
-                <img src="imgs/line.svg" alt="分隔線">
-                <p>透過國際級驗證的精準檢測，<br>
+                <h2 class="title">我們引以為傲的事</h2>
+                <img class="line" src="imgs/line.svg" alt="分隔線">
+                <p class="reason">透過國際級驗證的精準檢測，<br>
                     搭配資深獸醫團隊的權威解讀與一對一諮詢，<br>
                     將複雜基因資訊轉化為淺顯易懂的健康建議。<br>
                     藉由基因檢測，您能提早預知愛寵的遺傳風險，<br>
@@ -229,9 +163,9 @@
         <div class="selection">
             <img class="imgs" src="imgs/selection.png" alt="選擇「寵愛基因 Pet Genic」的圖片">
             <div class="text">
-                <h2>選擇「寵愛基因 Pet Genic」</h2>
-                <img src="imgs/line.svg" alt="分隔線">
-                <p>不僅是選擇一份基因檢測報告，<br>
+                <h2 class="title">選擇「寵愛基因 Pet Genic」</h2>
+                <img class="line" src="imgs/line.svg" alt="分隔線">
+                <p class="reason">不僅是選擇一份基因檢測報告，<br>
                     更是選擇一份科學與愛的安心託付。<br>
                     我們期許能成為您與毛小孩健康旅程中最堅實的夥伴，<br>
                     讓牠們得以更健康、更快樂、更有活力地<br>
