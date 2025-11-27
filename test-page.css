@@ -33,12 +33,16 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 20px;
+        transition: transform 0.5s ease;
     }
 
     .test-container div {
         position: relative;
         height: 100%;
+        border-radius: 20px;
+        border: 3px solid white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
     }
 
     .test-container h3 {
@@ -65,4 +69,14 @@
     .breed h3 {
         left: 10px;
         right: auto;
+    }
+
+    .test-container a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .test-container div:hover img {
+        transform: scale(1.1);
     }

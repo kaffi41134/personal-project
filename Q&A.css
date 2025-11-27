@@ -1,0 +1,64 @@
+.QA .container {
+    position: relative;
+    max-width: 1000px;
+    background-color: #FFF7EB;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.QA .container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.QA .container .faq-item {
+    position: relative;
+    z-index: 5;
+}
+
+.QA .container h3 {
+    font-weight: 500;
+}
+
+.QA .container p {
+    color: #40444D;
+    padding-top: 10px;
+}
+
+.QA .container .wrap svg {
+    width: 35px;
+    height: 35px;
+    transition: transform .3s ease;
+}
+
+.QA .container .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.QA h2 {
+    margin: 100px 0 50px;
+}
+
+@media screen and (max-width :1200px) {}
+
+@media screen and (max-width :820px) {
+    .promise-page .item {
+        margin-bottom: 30px;
+    }
+
+    .QA {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width :430px) {
+    .QA h3 {
+        font-size: 18px;
+    }
+}

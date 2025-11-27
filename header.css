@@ -1,51 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+
 
 * {
     font-family: inherit;
+    box-sizing: border-box;
 }
 
 body {
-    background-repeat: repeat;
-    background-position: 0 0;
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
     font-family: "Noto Sans TC";
     font-optical-sizing: auto;
     font-style: normal;
-    color: #202226;
+    color: var(--text-title);
     line-height: 1.8;
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(imgs/bgc_pattern.webp);
-    background-repeat: repeat;
-    opacity: 0.3;
-    z-index: -1;
+/* h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-weight: 500;
 }
 
 h2 {
-    font-size: 36px;    
-    letter-spacing: 0.12em;
-    padding: 5px;
+    font-size: 36px;
     font-weight: 500;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: 0.06em;
+}
+
+.price, .author {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+}
+
+ul {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    color: var(--text-body);
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: 0.08em;
+}
+
+.promise-page_text, .quote {
+    font-size: 18px;
+    letter-spacing: 0.12em;
+    color: var(--text-body);
+} */
+
+h1 {
+    font-size: clamp(1.875rem, 1.4rem + 1.2vw, 2.5rem); 
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+/* 次標題：36px (Max) -> 28px (Min) */
+h2 {
+    font-size: clamp(1.75rem, 1.3rem + 1.2vw, 2.25rem);
+    font-weight: 500;
+    text-align: center;
+}
+
+/* 小標題：24px (Max) -> 20px (Min) */
+h3 {
+    font-size: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
+    letter-spacing: 0.06em;
+}
+
+/* 價格/作者資訊：24px (Max) -> 18px (Min) */
+.price, .author {
+    font-size: clamp(1.125rem, 0.8rem + 0.8vw, 1.5rem);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+}
+
+/* 內文：20px (Max) -> 16px (Min) */
+p {
+    font-size: clamp(1rem, 0.75rem + 0.5vw, 1.25rem);
+    letter-spacing: 0.08em;
+}
+
+/* 列表清單：16px (Max) -> 14px (Min) */
+ul, .copyright {
+    font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+    letter-spacing: 0.12em;
+    color: var(--text-body);
+}
+
+/* 備註/引用：18px (Max) -> 14px (Min) */
+.promise-page_text, .quote, .main-footer p {
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1.125rem);
+    letter-spacing: 0.12em;
+    color: var(--text-body);
+}
+
+:root {
+    --text-title: #202226;
+    --text-body: #40444D;
+
+    --bg-body: #F6F1EA;
+    --bg-muted: #F6F1EA;
+    --bg-dark: #D0BB95;
 }
 
 .header-container {
     display: flex;
-    height: 150px;
+    height: 75px;
     align-items: center;
     justify-content: space-between;
 }
 
 .main-header {
-    background-color: #dec4a1;
+    background-color: #D0BB95;
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,16 +128,11 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.main-nav span {
-    color: #40444d;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-}
-
 .main-nav ul {
     display: flex;
     gap: 40px;
     margin-right: 40px;
+    font-weight: 500;
 }
 
 .main-nav a {
@@ -71,10 +141,11 @@ h2 {
     padding: 8px 12px;
     text-decoration: none;
     gap: 10px;
+    color: #40444d;
 }
 
 .header-container .logo {
-    height: 90px;
+    height: 70%;
     width: auto;
     margin-left: 30px;
 }
@@ -90,5 +161,6 @@ h2 {
 }
 
 .header-placeholder {
-    height: 150px;
+    height: 75px;
+    background-color: transparent;
 }
