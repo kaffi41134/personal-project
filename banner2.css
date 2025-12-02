@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=LXGW+WenKai+Mono+TC&family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
 
 .title-en {
-    font-size: 24px;
     font-style: italic;
     color: #989797;
     font-family: Alata;
@@ -9,22 +8,20 @@
 }
 
 .title-zh {
-    font-size: 36px;
     font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.12em;    
+    line-height: 0.05em;
+    letter-spacing: 0.12em;
 }
 
 .banner {
     position: relative;
 }
 
-h1 {
+.title_group {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 30%);
-    z-index: 10;
     text-align: center;
 }
 
@@ -32,4 +29,3 @@ h1 {
     width: 100%;
     height: auto;
 }
-

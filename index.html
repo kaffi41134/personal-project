@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>寵愛基因 Pet Genic</title>
+    <title>犬貓基因檢測項目 | 寵物基因檢測 | 寵愛基因Pet Genic</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="banner.css">
@@ -23,13 +23,35 @@
     <style>
         body {
             background-color: #F7F7F6;
-            max-width: 1920px;
-            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
+    <!----- hamburger ----->
+    <div class="hamburger">
+        <input type="checkbox" name="" id="menu_control">
+        <label for="menu_control" class="menu-overlay"></label>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                <div class="icon_group">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <nav>
+                <a href="about-us.html"><img src="imgs/dog_icon.svg" alt="關於我們icon">關於我們</a>
+                <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
+                <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
+            </nav>
+        </div>
+    </div>
+    <!----- Desktop navbar ----->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
@@ -54,13 +76,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="Q&A.html">
-                            <img src="imgs/Q&A_icon.svg" alt="常見問題icon">
-                            <span>常見問題</span>
+                        <a href="myaccount.html"><i class="fa-solid fa-cart-shopping"></i>
+                            <span>購物中心</span>
                         </a>
                     </li>
                     <li>
-                        <a href="myaccount.html"><img src="imgs/member_icon.svg" alt="會員中心icon">
+                        <a href=""><i class="fa-solid fa-circle-user"></i>
                             <span>會員中心</span>
                         </a>
                     </li>
@@ -260,66 +281,80 @@
     </section>
     <section class="QA">
         <h2>常見問題</h2>
-        <div class="container">
-            <div class="faq-item">
-                <div class="wrap">
-                    <h3>Q: 什麼是基因檢測？它如何運作？</h3>
-                    <i class="fa-solid fa-angle-down fa-xl"></i>
-                </div>
-                <p>A: 基因檢測是一種透過分析生物體的DNA樣本，來獲取關於其基因組資訊的技術。它通常運作方式是採集一份樣本（例如：
-                    狗狗的唾液、人類的口腔細胞），然後將其送往實驗室，由專業人員提取DNA並利用高科技儀器分析特定的基因位點、基因序列或染色體結構，以識別出與品種、遺傳疾病、性狀或年齡相關的基因標記。</p>
+        <ul class="list">
+            <div class="container">
+                <li class="faq-item">
+                    <a href="#" class="wrap">
+                        <h3>Q: 什麼是基因檢測？它如何運作？</h3>
+                        <i class="fa-solid fa-angle-down fa-xl"></i>
+                    </a>
+                    <div class="answer">
+                        <p>A: 基因檢測是一種透過分析生物體的DNA樣本，來獲取關於其基因組資訊的技術。它通常運作方式是採集一份樣本（例如：
+                            狗狗的唾液、人類的口腔細胞），然後將其送往實驗室，由專業人員提取DNA並利用高科技儀器分析特定的基因位點、基因序列或染色體結構，以識別出與品種、遺傳疾病、性狀或年齡相關的基因標記。
+                        </p>
+                    </div>
+                </li>
+                <img src="imgs/blob4.png" alt="色塊圖片">
             </div>
-            <img src="imgs/blob4.png" alt="色塊圖片">
-        </div>
-        <div class="container">
-            <div class="faq-item">
-                <div class="wrap">
-                    <h3>Q: 基因檢測的結果會有多準確？</h3>
-                    <i class="fa-solid fa-angle-down fa-xl"></i>
-                </div>
-                <p>A:
-                    基因檢測的準確性取決於多種因素，包括所使用的技術、數據庫的大小和廣泛性，以及樣本的品質。知名且有經驗的實驗室通常能提供高度準確的結果。例如：在品種測試中，如果您的寵物是混血兒，可能需要更大的數據庫才能精確識別所有祖先品種。對於疾病篩查，檢測通常能準確指出遺傳傾向，但並不代表一定會發病，還需結合臨床症狀和獸醫診斷。
-                </p>
+            <div class="container">
+                <li class="faq-item">
+                    <a href="#" class="wrap">
+                        <h3>Q: 基因檢測的結果會有多準確？</h3>
+                        <i class="fa-solid fa-angle-down fa-xl"></i>
+                    </a>
+                    <div class="answer">
+                        <p>A:
+                            基因檢測的準確性取決於多種因素，包括所使用的技術、數據庫的大小和廣泛性，以及樣本的品質。知名且有經驗的實驗室通常能提供高度準確的結果。例如：在品種測試中，如果您的寵物是混血兒，可能需要更大的數據庫才能精確識別所有祖先品種。對於疾病篩查，檢測通常能準確指出遺傳傾向，但並不代表一定會發病，還需結合臨床症狀和獸醫診斷。
+                        </p>
+                    </div>
+                </li>
+                <img src="imgs/blob4.png" alt="色塊圖片">
             </div>
-            <img src="imgs/blob4.png" alt="色塊圖片">
-        </div>
-        <div class="container">
-            <div class="faq-item">
-                <div class="wrap">
-                    <h3>Q: 進行基因檢測需要多長時間才能拿到結果？</h3>
-                    <i class="fa-solid fa-angle-down fa-xl"></i>
-                </div>
-                <p>A:
-                    拿到基因檢測結果所需的時間因實驗室和測試類型而異。一般而言，從實驗室收到您的樣本後，處理和分析過程通常需要2到6週。在某些特殊情況下，如果樣本品質不佳需要重新採樣或進行更複雜的分析，時間可能會延長。您通常會透過電子郵件收到通知或在線上平台查看進度。
-                </p>
+            <div class="container">
+                <li class="faq-item">
+                    <a href="#" class="wrap">
+                        <h3>Q: 進行基因檢測需要多長時間才能拿到結果？</h3>
+                        <i class="fa-solid fa-angle-down fa-xl"></i>
+                    </a>
+                    <div class="answer">
+                        <p>A:
+                            拿到基因檢測結果所需的時間因實驗室和測試類型而異。一般而言，從實驗室收到您的樣本後，處理和分析過程通常需要2到6週。在某些特殊情況下，如果樣本品質不佳需要重新採樣或進行更複雜的分析，時間可能會延長。您通常會透過電子郵件收到通知或在線上平台查看進度。
+                        </p>
+                    </div>
+                </li>
+                <img src="imgs/blob4.png" alt="色塊圖片">
             </div>
-            <img src="imgs/blob4.png" alt="色塊圖片">
-        </div>
-        <div class="container">
-            <div class="faq-item">
-                <div class="wrap">
-                    <h3>Q: 我該如何為我的狗狗採集樣本？這會痛嗎？</h3>
-                    <i class="fa-solid fa-angle-down fa-xl"></i>
-                </div>
-                <p>A:
-                    大多數非侵入性基因檢測的採樣過程都非常簡單且無痛。對於狗狗，通常是使用口腔頰拭子（棉棒）輕輕刮取牠口腔內壁的細胞樣本，過程只需幾秒鐘。採樣時只需要確保樣本沒有受到污染（例如，狗狗在採樣前應避免進食或飲水一小時）。套件內會附有詳細的採樣說明。
-                </p>
+            <div class="container">
+                <li class="faq-item">
+                    <a href="#" class="wrap">
+                        <h3>Q: 我該如何為我的狗狗採集樣本？這會痛嗎？</h3>
+                        <i class="fa-solid fa-angle-down fa-xl"></i>
+                    </a>
+                    <div class="answer">
+                        <p>A:
+                            大多數非侵入性基因檢測的採樣過程都非常簡單且無痛。對於狗狗，通常是使用口腔頰拭子（棉棒）輕輕刮取牠口腔內壁的細胞樣本，過程只需幾秒鐘。採樣時只需要確保樣本沒有受到污染（例如，狗狗在採樣前應避免進食或飲水一小時）。套件內會附有詳細的採樣說明。
+                        </p>
+                    </div>
+                </li>
+                <img src="imgs/blob4.png" alt="色塊圖片">
             </div>
-            <img src="imgs/blob4.png" alt="色塊圖片">
-        </div>
-        <div class="container">
-            <div class="faq-item">
-                <div class="wrap">
-                    <h3>Q: 基因檢測結果對我或我的寵物有什麼實際幫助？</h3>
-                    <i class="fa-solid fa-angle-down fa-xl"></i>
-                </div>
-                <p>A:
-                    基因檢測結果能提供寶貴的資訊，幫助您做出更明智的決策。對於寵物，它可以幫助您了解品種構成，預測潛在行為和體型。篩查遺傳疾病風險，以便提早預防或進行監測。制定個性化的飲食和運動計畫。評估生物學年齡，更好地管理老化過程。
-                </p>
+            <div class="container">
+                <li class="faq-item">
+                    <a href="#" class="wrap">
+                        <h3>Q: 基因檢測結果對我或我的寵物有什麼實際幫助？</h3>
+                        <i class="fa-solid fa-angle-down fa-xl"></i>
+                    </a>
+                    <div class="answer">
+                        <p>A:
+                            基因檢測結果能提供寶貴的資訊，幫助您做出更明智的決策。對於寵物，它可以幫助您了解品種構成，預測潛在行為和體型。篩查遺傳疾病風險，以便提早預防或進行監測。制定個性化的飲食和運動計畫。評估生物學年齡，更好地管理老化過程。
+                        </p>
+                    </div>
+                </li>
+                <img src="imgs/blob4.png" alt="色塊圖片">
             </div>
-            <img src="imgs/blob4.png" alt="色塊圖片">
-        </div>
+        </ul>
     </section>
+    <!----- footer ----->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-container">
@@ -392,12 +427,19 @@
             });
         });
     </script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1200,
             disable: 'mobile'
         });
+    </script>
+    <script>
+        $("a.wrap").on("click",function(e){
+            e.preventDefault();
+            $(".wrap.fa-angle-down").css("style", "transform: rotate(180deg)");
+        })
     </script>
 </body>
 

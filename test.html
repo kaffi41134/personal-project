@@ -5,53 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+
 
 
 </head>
 <style>
-    a {
-        background-color: #852b2b;
-        padding: 6px 20px;
-        display: inline-flex;
-    }
-    .banner {
+    .wrap {
         display: flex;
-        background-color: #206c76;
-        justify-content: center;
-        max-width: 1320px;
         box-sizing: border-box;
-        margin: auto;
-        align-items: center;
-    }
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .text {
-        width: 50%;
-        padding: 50px;
     }
 
-    .img {
-        width: 50%;
-        padding: 50px;
+    .container {
+        background-color: #854747;
+        margin: 5px;
+    }
+
+    /* img {
+        width: 100%;
+        height: auto;
+    } */
+
+    .wrap>div:nth-child(1) {
+        flex: 2 1 0%;
+    }
+
+    .wrap>div:nth-child(2) {
+        flex: 1 1 0%;
+    }
+
+    .wrap>div:nth-child(3) {
+        flex: 1 1 0%;
     }
 </style>
 
 <body>
-    <div class="banner">
-        <div class="text">
-            <h1>標題</h1>
-            <p>好多技術感興趣陽光進了做什麼檢測意識生物律師，自我的確對了家庭簡歷事件幾乎殺手任何人，阿宅人民共和國。</p>
-            <a href="">基本檢測</a>
+    <div class="wrap">
+        <div class="container">
+            <img src="./imgs/grid_relative.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius rerum perferendis aliquid iusto architecto
+                ratione exercitationem magnam reiciendis non dignissimos?</p>
         </div>
-
-        <div class="img">
-            <img src="./imgs/banner.png" alt="">
+        <div class="container">
+            <img src="./imgs/grid_health.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius rerum perferendis aliquid iusto architecto
+                ratione exercitationem magnam reiciendis non dignissimos?</p>
+        </div>
+        <div class="container">
+            <img src="https://picsum.photos/200/100/?random=13">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius rerum perferendis aliquid iusto architecto
+                ratione exercitationem magnam reiciendis non dignissimos?</p>
         </div>
     </div>
+    <div><img src="https://picsum.photos/100/100/?random=10"></div>
+    <img src="https://picsum.photos/100/100/?random=10">
 
 </body>
 

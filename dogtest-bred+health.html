@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>狗狗品種+健康DNA檢測</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="banner2.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="testing-item.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
 </head>
 
 <body>
+    <!----- hamburger ----->
+    <div class="hamburger">
+        <input type="checkbox" name="" id="menu_control">
+        <label for="menu_control" class="menu-overlay"></label>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                <div class="icon_group">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <nav>
+                <a href="about-us.html"><img src="imgs/dog_icon.svg" alt="關於我們icon">關於我們</a>
+                <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
+                <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
+            </nav>
+        </div>
+    </div>
+    <!----- Desktop navbar ----->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
@@ -52,21 +78,20 @@
             </nav>
         </div>
     </header>
-    <div class="header-placeholder"></div>
     <main>
         <div class="banner">
-            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
-            <h1>
-                <span class="title-en" lang="en">Testing Items</span><br>
-                <span class="title-zh" lang="zh-TW">檢測項目</span>
-            </h1>
+            <img class="banner2" src="imgs/testing items-banner.png" alt="橫幅圖片">
+            <div class="title_group">
+                <h3 class="title-en" lang="en">Testing Items</h3><br>
+                <h2 class="title-zh" lang="zh-TW">檢測項目</h2>
+            </div>
         </div>
     </main>
     <section class="testing-itmes">
         <ul class="path">
             <li><a href="testing-items.html">全部</a></li>
             <li><a href="testing-items.html#dogtest-items">狗狗基因檢測項目</a></li>
-            <li><a href="dogtest-bred+health.html">品種+健康DNA檢測</a></li>
+            <li>品種+健康DNA檢測</li>
         </ul>
         <div class="container">
             <div class="item-img">
@@ -127,35 +152,49 @@
             </ul>
         </div>
     </section>
+    <!----- footer ----->
     <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-item">
-                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
-                <div class="media-icon">
-                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
-                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
-                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
-                </div>
-            </div>
-            <div class="footer-item">
-                <h4>聯絡我們</h4>
-                <div class="contact-line">
-                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
-                </div>
-                <div class="contact-line">
-                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
-                </div>
-                <div class="contact-line">
-                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
-                </div>
-            </div>
-            <div class="footer-item">
-                <h4>營業時段</h4>
-                <div class="contact-line">
-                    <p>週一~週六 09:00 ~ 21:00</p>
-                </div>
-                <div class="contact-line">
-                    <p>週日 休息 </p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="row row-cols-sm-12">
+                    <div class="col">
+                        <div class="footer-item">
+                            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                            <div class="media-icon">
+                                <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                                <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                                <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <p class="text">聯絡我們</p>
+                            <div class="contact-line">
+                                <img src="imgs/email.svg" alt="信箱">
+                                <p>petcare.service@example.com</p>
+                            </div>
+                            <div class="contact-line">
+                                <img src="imgs/tele.svg" alt="電話">
+                                <p>(02) 1234-5678</p>
+                            </div>
+                            <div class="contact-line">
+                                <img src="imgs/add.svg" alt="地址">
+                                <p>100 台北市中正區仁愛路一段1號</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <p>營業時段</p>
+                            <div class="contact-line">
+                                <p>週一~週六 09:00 ~ 21:00</p>
+                            </div>
+                            <div class="contact-line">
+                                <p>週日 休息 </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

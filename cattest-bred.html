@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>貓咪品種DNA檢測</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="banner2.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="testing-item.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
 </head>
 
 <body>
+    <!----- hamburger ----->
+    <div class="hamburger">
+        <input type="checkbox" name="" id="menu_control">
+        <label for="menu_control" class="menu-overlay"></label>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                <div class="icon_group">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <nav>
+                <a href="about-us.html"><img src="imgs/dog_icon.svg" alt="關於我們icon">關於我們</a>
+                <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
+                <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
+            </nav>
+        </div>
+    </div>
+    <!----- Desktop navbar ----->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
@@ -52,58 +78,57 @@
             </nav>
         </div>
     </header>
-    <div class="header-placeholder"></div>
     <main>
         <div class="banner">
-            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
-            <h1>
-                <span class="title-en" lang="en">Testing Items</span><br>
-                <span class="title-zh" lang="zh-TW">檢測項目</span>
-            </h1>
+            <img class="banner2" src="imgs/testing items-banner.png" alt="橫幅圖片">
+            <div class="title_group">
+                <h3 class="title-en" lang="en">Testing Items</h3><br>
+                <h2 class="title-zh" lang="zh-TW">檢測項目</h2>
+            </div>
         </div>
     </main>
     <section class="testing-itmes">
-    <ul class="path">
-        <li><a href="testing-items.html">全部</a></li>
-        <li><a href="testing-items.html#cattest-items">貓咪基因檢測項目</a></li>
-        <li><a href="cattest-bred.html">品種DNA檢測</a></li>
-    </ul>
-    <div class="container">
-        <div class="item-img">
-            <img src="imgs/bred_cattest.png" alt="貓咪品種基因採樣套組的完整包裝照片">
-        </div>
-        <div class="item-text">
-            <h2>品種DNA檢測</h2>
-            <p>揭示您的愛貓的血統起源，<br>全面了解牠的天生特質，讓您更懂牠！
-            </p>
-            <ul>
-                <li>• 品種構成分析 (血統溯源)</li>
-                <li>• 性狀與特徵預測 (天生特質)</li>
-            </ul>
-            <p class="price">NT$ 2,300</p>
-            <div class="buttons">
-                <div class="count_button">
-                    <button class="minus">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path
-                                d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
-                        </svg>
-                    </button>
-                    <input class="number_input" min="1" value="1">
-                    <button class="plus">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path
-                                d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
-                        </svg>
-                    </button>
+        <ul class="path">
+            <li><a href="testing-items.html">全部</a></li>
+            <li><a href="testing-items.html#cattest-items">貓咪基因檢測項目</a></li>
+            <li>品種DNA檢測</li>
+        </ul>
+        <div class="container">
+            <div class="item-img">
+                <img src="imgs/bred_cattest.png" alt="貓咪品種基因採樣套組的完整包裝照片">
+            </div>
+            <div class="item-text">
+                <h2>品種DNA檢測</h2>
+                <p>揭示您的愛貓的血統起源，<br>全面了解牠的天生特質，讓您更懂牠！
+                </p>
+                <ul>
+                    <li>• 品種構成分析 (血統溯源)</li>
+                    <li>• 性狀與特徵預測 (天生特質)</li>
+                </ul>
+                <p class="price">NT$ 2,300</p>
+                <div class="buttons">
+                    <div class="count_button">
+                        <button class="minus">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
+                            </svg>
+                        </button>
+                        <input class="number_input" min="1" value="1">
+                        <button class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="add-to-cart-btn">加入購物車</button>
                 </div>
-                <button class="add-to-cart-btn">加入購物車</button>
             </div>
         </div>
-    </div>
-    <img class="separate" src="imgs/line2.png" alt="分隔線">
+        <img class="separate" src="imgs/line2.png" alt="分隔線">
         <div class="purchase-notice_content">
             <h3>購買須知</h3>
             <ul class="notice-list">
@@ -126,35 +151,49 @@
             </ul>
         </div>
     </section>
+    <!----- footer ----->
     <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-item">
-                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
-                <div class="media-icon">
-                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
-                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
-                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
-                </div>
-            </div>
-            <div class="footer-item">
-                <h4>聯絡我們</h4>
-                <div class="contact-line">
-                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
-                </div>
-                <div class="contact-line">
-                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
-                </div>
-                <div class="contact-line">
-                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
-                </div>
-            </div>
-            <div class="footer-item">
-                <h4>營業時段</h4>
-                <div class="contact-line">
-                    <p>週一~週六 09:00 ~ 21:00</p>
-                </div>
-                <div class="contact-line">
-                    <p>週日 休息 </p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="row row-cols-sm-12">
+                    <div class="col">
+                        <div class="footer-item">
+                            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                            <div class="media-icon">
+                                <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                                <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                                <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <p class="text">聯絡我們</p>
+                            <div class="contact-line">
+                                <img src="imgs/email.svg" alt="信箱">
+                                <p>petcare.service@example.com</p>
+                            </div>
+                            <div class="contact-line">
+                                <img src="imgs/tele.svg" alt="電話">
+                                <p>(02) 1234-5678</p>
+                            </div>
+                            <div class="contact-line">
+                                <img src="imgs/add.svg" alt="地址">
+                                <p>100 台北市中正區仁愛路一段1號</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <p>營業時段</p>
+                            <div class="contact-line">
+                                <p>週一~週六 09:00 ~ 21:00</p>
+                            </div>
+                            <div class="contact-line">
+                                <p>週日 休息 </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

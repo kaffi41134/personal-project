@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+--------------------------------------------------------
+codepenレイアウト用
+-------------------------------------------------------- */
+        body {
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+            background: #c41a1a;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .btn-block {
+            width: 200px;
+            padding: 30px;
+        }
+
+        /* 
+--------------------------------------------------------
+openbtn
+-------------------------------------------------------- */
+
+        .openbtn {
+            background: #10568f;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .openbtn span {
+            background-color: #fff;
+            display: inline-block;
+            position: absolute;
+            left: 13px;
+            height: 2px;
+            transition: all .4s;
+
+            &:nth-of-type(1) {
+                top: 22px;
+                width: 50%;
+            }
+
+            &:nth-of-type(2) {
+                top: 29px;
+                width: 30%;
+            }
+        }
+
+        .openbtn.active span {
+            &:nth-of-type(1) {
+                top: 18px;
+                left: 14px;
+                transform: translateY(6px) rotate(-45deg);
+                width: 45%;
+            }
+
+            &:nth-of-type(2) {
+                top: 30px;
+                left: 14px;
+                transform: translateY(-6px) rotate(45deg);
+                width: 45%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="openbtn"><span></span><span></span></div>
+</body>
+
+</html>

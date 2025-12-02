@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>貓咪親戚DNA檢測</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="banner2.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="testing-item.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
 </head>
 
 <body>
+    <!----- hamburger ----->
+    <div class="hamburger">
+        <input type="checkbox" name="" id="menu_control">
+        <label for="menu_control" class="menu-overlay"></label>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                <div class="icon_group">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <nav>
+                <a href="about-us.html"><img src="imgs/dog_icon.svg" alt="關於我們icon">關於我們</a>
+                <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
+                <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
+            </nav>
+        </div>
+    </div>
+    <!----- Desktop navbar ----->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
@@ -52,21 +78,20 @@
             </nav>
         </div>
     </header>
-    <div class="header-placeholder"></div>
     <main>
         <div class="banner">
-            <img class="banner2" src="imgs/banner2.png" alt="橫幅圖片">
-            <h1>
-                <span class="title-en" lang="en">Testing Items</span><br>
-                <span class="title-zh" lang="zh-TW">檢測項目</span>
-            </h1>
+            <img class="banner2" src="imgs/testing items-banner.png" alt="橫幅圖片">
+            <div class="title_group">
+                <h3 class="title-en" lang="en">Testing Items</h3><br>
+                <h2 class="title-zh" lang="zh-TW">檢測項目</h2>
+            </div>
         </div>
     </main>
     <section class="testing-itmes">
         <ul class="path">
             <li><a href="testing-items.html">全部</a></li>
             <li><a href="testing-items.html#cattest-items">貓咪基因檢測項目</a></li>
-            <li><a href="cattest-health.html">親戚DNA檢測</a></li>
+            <li>親戚DNA檢測</li>
         </ul>
         <div class="container">
             <div class="item-img">
@@ -74,7 +99,7 @@
             </div>
             <div class="item-text">
                 <h2>親戚DNA檢測</h2>
-                <p>您是否曾好奇，您的愛貓是否有隱藏的兄弟姊妹<br>或父母？透過基因科技，串聯牠的血脈家族！
+                <p>您是否曾好奇，您的愛貓是否有隱藏的兄弟姊妹或父母？透過基因科技，串聯牠的血脈家族！
                 </p>
                 <ul>
                     <li>• 基因親緣關係比對</li>
@@ -105,57 +130,71 @@
             </div>
         </div>
         <img class="separate" src="imgs/line2.png" alt="分隔線">
-            <div class="purchase-notice_content">
-                <h3>購買須知</h3>
-                <ul class="notice-list">
-                    <li>
-                        <h4>🎯 確立檢測目的與類型</h4>
-                        <p>在購買前，請先明確您想知道品種組成、遺傳病風險、還是性狀特徵。<br>不同目的需選擇不同檢測產品</p>
-                    </li>
-                    <li>
-                        <h4>🧪 樣本採集與郵寄規範</h4>
-                        <p>嚴格遵守說明書使用口腔拭子採集，避開進食後30分鐘到1小時，<br>確保樣本純淨、量足，並按規定及時寄回。</p>
-                    </li>
-                    <li>
-                        <h4>📈 報告解讀與科學局限</h4>
-                        <p>基因報告提供的是風險資訊（如攜帶疾病基因），而非最終疾病診斷。<br>任何健康結果都應與獸醫討論，並了解檢測的數據庫局限性。</p>
-                    </li>
-                    <li>
-                        <h4>💸 費用、品牌與售後保障</h4>
-                        <p>選擇具備良好信譽（如 ISO 認證）、數據庫大的品牌，<br>務必確認是否提供專業報告解讀諮詢和隱私保護政策。</p>
-                    </li>
-                </ul>
-            </div>
+        <div class="purchase-notice_content">
+            <h3>購買須知</h3>
+            <ul class="notice-list">
+                <li>
+                    <h4>🎯 確立檢測目的與類型</h4>
+                    <p>在購買前，請先明確您想知道品種組成、遺傳病風險、還是性狀特徵。<br>不同目的需選擇不同檢測產品</p>
+                </li>
+                <li>
+                    <h4>🧪 樣本採集與郵寄規範</h4>
+                    <p>嚴格遵守說明書使用口腔拭子採集，避開進食後30分鐘到1小時，<br>確保樣本純淨、量足，並按規定及時寄回。</p>
+                </li>
+                <li>
+                    <h4>📈 報告解讀與科學局限</h4>
+                    <p>基因報告提供的是風險資訊（如攜帶疾病基因），而非最終疾病診斷。<br>任何健康結果都應與獸醫討論，並了解檢測的數據庫局限性。</p>
+                </li>
+                <li>
+                    <h4>💸 費用、品牌與售後保障</h4>
+                    <p>選擇具備良好信譽（如 ISO 認證）、數據庫大的品牌，<br>務必確認是否提供專業報告解讀諮詢和隱私保護政策。</p>
+                </li>
+            </ul>
+        </div>
     </section>
+    <!----- footer ----->
     <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-item">
-                <a href="#"><img class="logo" src="imgs/logo.svg" alt=""></a>
-                <div class="media-icon">
-                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
-                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
-                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
-                </div>
-            </div>
-            <div class="footer-item">
-                <h4>聯絡我們</h4>
-                <div class="contact-line">
-                    <img src="imgs/email.svg" alt="信箱"><span>petcare.service@example.com</span>
-                </div>
-                <div class="contact-line">
-                    <img src="imgs/tele.svg" alt="電話"><span>(02) 1234-5678</span>
-                </div>
-                <div class="contact-line">
-                    <img src="imgs/add.svg" alt="地址"><span>100 台北市中正區仁愛路一段1號</span>
-                </div>
-            </div>
-            <div class="footer-item">
-                <h4>營業時段</h4>
-                <div class="contact-line">
-                    <p>週一~週六 09:00 ~ 21:00</p>
-                </div>
-                <div class="contact-line">
-                    <p>週日 休息 </p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="row row-cols-sm-12">
+                    <div class="col">
+                        <div class="footer-item">
+                            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                            <div class="media-icon">
+                                <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                                <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                                <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <p class="text">聯絡我們</p>
+                            <div class="contact-line">
+                                <img src="imgs/email.svg" alt="信箱">
+                                <p>petcare.service@example.com</p>
+                            </div>
+                            <div class="contact-line">
+                                <img src="imgs/tele.svg" alt="電話">
+                                <p>(02) 1234-5678</p>
+                            </div>
+                            <div class="contact-line">
+                                <img src="imgs/add.svg" alt="地址">
+                                <p>100 台北市中正區仁愛路一段1號</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <p>營業時段</p>
+                            <div class="contact-line">
+                                <p>週一~週六 09:00 ~ 21:00</p>
+                            </div>
+                            <div class="contact-line">
+                                <p>週日 休息 </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

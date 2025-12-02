@@ -39,10 +39,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .3s;
 }
 
 .QA h2 {
     margin: 100px 0 50px;
+}
+
+.QA a{
+    text-decoration: none;
+    color: var(--text-title);
 }
 
 @media screen and (max-width :1200px) {}
