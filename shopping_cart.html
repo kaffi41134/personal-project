@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>購物中心 Shopping Cart | 寵愛基因Pet Genic</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="banner2.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner2.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+TC:wght@100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -174,14 +174,16 @@
             -webkit-tap-highlight-color: #ECECEC;
         }
 
-        .payment-option >label{
+        .payment-option>label {
             display: block;
             padding: 5px 0;
         }
-        .payment-option input{
+
+        .payment-option input {
             font-family: inherit;
             font-size: inherit;
         }
+
         @media screen and (max-width :820px) {}
 
         @media screen and (max-width :430px) {}
@@ -368,25 +370,25 @@
                     <span class="total-amount">共2項商品</span>
                 </div>
                 <div class="payment-option">
-                <h2>選擇付款和取貨方式</h2>
-                <label>
-                    <input type="radio" name="payment-option" value="creditcard">
-                    信用卡-宅配
-                </label>
-                <label>
-                    <input type="radio" name="payment-option" value="atm">
-                    ATM 轉帳-宅配
-                </label>
-                <label>
-                    <input type="radio" name="payment-option" value="e-pay">
-                    電子支付-宅配
-                </label>
+                    <h2>選擇付款和取貨方式</h2>
+                    <label>
+                        <input type="radio" name="payment-option" value="creditcard">
+                        信用卡-宅配
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-option" value="atm">
+                        ATM 轉帳-宅配
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-option" value="e-pay">
+                        電子支付-宅配
+                    </label>
                 </div>
                 <div class="order-info">
                     <label for="full-name">姓名:</label>
                     <input type="text" id="full-name" name="user_name" placeholder="請輸入姓名">
-                    <label for="phone-num">姓名:</label>
-                    <input type="text" id="phone-num" name="user_phone" placeholder="請輸入姓名">
+                    <label for="phone-num">手機號碼:</label>
+                    <input type="text" id="phone-num" name="user_phone" placeholder="請輸入手機號碼">
                 </div>
             </section>
         </main>

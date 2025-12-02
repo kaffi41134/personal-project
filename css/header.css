@@ -1,4 +1,3 @@
-
 * {
     font-family: inherit;
     box-sizing: border-box;
@@ -154,11 +153,13 @@ p {
     color: white;
     transition: color 0.3s ease;
 }
+
 .main-header ul li:hover i {
     color: white;
     transition: color 0.3s ease;
 }
-.main-header i{
+
+.main-header i {
     font-size: 23px;
 }
 
@@ -182,7 +183,7 @@ p {
     opacity: 0;
 }
 
-.hamburger .header {
+.hamburger .mobile-header {
     height: 50px;
     background-color: #D0BB95;
     position: relative;
@@ -265,7 +266,7 @@ p {
     font-size: 18px;
 }
 
-#menu_control:checked~.header nav {
+#menu_control:checked~.mobile-header nav {
     left: 0;
 }
 
