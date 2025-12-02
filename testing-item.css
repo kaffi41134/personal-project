@@ -1,5 +1,5 @@
     @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
-    
+
     body {
         background-color: #FFF7F7;
     }
@@ -22,7 +22,7 @@
     .path li a {
         color: #aaa;
         text-decoration: none;
-        
+
     }
 
     .path li+li::before {
@@ -148,6 +148,12 @@
         letter-spacing: 0.12em;
     }
 
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     .count_button {
         display: flex;
         align-items: stretch;
@@ -164,12 +170,6 @@
         -webkit-appearance: none;
         margin: 0;
         appearance: none;
-    }
-
-    .buttons {
-        display: flex;
-        align-items: center;
-        gap: 20px;
     }
 
     .count_button button {

@@ -24,6 +24,7 @@
             justify-content: center;
             margin-top: 20%;
             font-size: 20px;
+            background-color: var(--bg-muted);
         }
 
         .checkout-progress :nth-child(2)::before,
@@ -33,8 +34,154 @@
             font-weight: 900;
             font-size: 20px;
             padding: 0 10px;
+            color: var(--bg-dark);
         }
 
+        .checkout-progress .step {
+            transition: .3s;
+        }
+
+        .checkout-progress .step:hover {
+            border-bottom: 2px solid #aaa;
+        }
+
+        .cart-main-content h2 {
+            text-align: start;
+            margin: 15px 0;
+        }
+
+        .cart-main-content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .item-details-group {
+            display: flex;
+        }
+
+        .cart-item-card {
+            padding: 10px 10px;
+            background-color: white;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .item-info-controls {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .item-image-link {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .section-title {
+            margin: 20px 0;
+        }
+
+        .count_button {
+            display: flex;
+            align-items: stretch;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .number_input {
+            width: 35px;
+            text-align: center;
+            border: none;
+            padding: 5px 8px;
+            -webkit-appearance: none;
+            margin: 0;
+            appearance: none;
+        }
+
+        .count_button button {
+            background-color: #ececec;
+            border: none;
+            cursor: pointer;
+            padding: 5px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .count_button button svg {
+            width: 15px;
+            height: 15px;
+            fill: #202226;
+        }
+
+        .item-title-actions,
+        .item-quantity-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cart-main-content a {
+            text-decoration: none;
+            color: var(--text-title);
+            font-weight: 500;
+        }
+
+        .item-quantity-price .item-price {
+            font-size: 15px;
+            color: var(--text-body);
+        }
+
+        .cart-main-content .test-flow {
+            color: #BB6318;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 0.12em;
+            margin-left: 10px;
+        }
+
+        .cart-main-content .test-flow img {
+            width: 30px;
+            height: auto;
+            display: block;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mobile-cost-summary {
+            padding: 10px;
+            background-color: var(--bg-muted);
+            color: var(--text-title);
+        }
+
+        .item-title-actions .del-icon {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            -webkit-tap-highlight-color: #ECECEC;
+        }
+
+        .payment-option >label{
+            display: block;
+            padding: 5px 0;
+        }
+        .payment-option input{
+            font-family: inherit;
+            font-size: inherit;
+        }
         @media screen and (max-width :820px) {}
 
         @media screen and (max-width :430px) {}
@@ -114,82 +261,135 @@
     </main>
     <!----- 手機版購物車 ----->
     <div class="mobile-cart-wrapper">
-
         <section class="checkout-progress">
             <div class="step active">確認購物車</div>
-            <div class="step active">填寫資料</div>
+            <div class="step ctive">填寫資料</div>
             <div class="step active">完成訂購</div>
         </section>
-
         <main class="cart-main-content">
-
-            <h2 class="section-title">購物清單</h2>
-
-            <div class="product-list-container">
-
-                <article class="cart-item-card">
-
-                    <div class="item-details-group">
-
-                        <a href="#" class="item-image-link">
-                            <img src="product-a.jpg" alt="半開拉鍊刷毛寬鬆連帽上衣" class="item-image">
-                        </a>
-
-                        <div class="item-info-controls">
-                            <a href="#" class="item-name">半開拉鍊刷毛寬鬆連帽上衣</a>
-
-                            <div class="item-selection-controls">
-                                <div class="qty-selector">
-                                    <span class="current-qty">1</span>
+            <!----- 步驟一:確認購物車 ----->
+            <section id="step_1" class="step-content active-step">
+                <div class="test-flow">
+                    <img src="imgs/paw_icon.svg" alt="寵物腳印icon">
+                    <h2 class="section-title">購物清單</h2>
+                </div>
+                <div class="product-list-container">
+                    <article class="cart-item-card">
+                        <div class="item-details-group">
+                            <a href="#" class="item-image-link">
+                                <img src="./imgs/bred+health_cattest.png" alt="貓咪品種+健康基因採樣套組的完整包裝照片" class="item-image">
+                            </a>
+                            <div class="item-info-controls">
+                                <div class="item-title-actions">
+                                    <a href="#" class="item-name">貓咪品種+健康DNA檢測</a>
+                                    <button type="button" class="del-icon"><i
+                                            class="fa-regular fa-trash-can"></i></button>
                                 </div>
-                                <span class="color-size-display">900黑色 S</span>
+                                <div class="item-quantity-price">
+                                    <div class="count_button">
+                                        <button class="minus">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                <path
+                                                    d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
+                                            </svg>
+                                        </button>
+                                        <input class="number_input" min="1" value="1">
+                                        <button class="plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                <path
+                                                    d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <span class="item-price">NT$ 4,200</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="item-price-actions">
-                        <span class="item-price">NT.459</span>
-                        <button class="remove-btn">×</button>
-                    </div>
-                </article>
-
-                <article class="cart-item-card">
-                </article>
-
-            </div>
-            <aside class="mobile-cost-summary">
-
-                <div class="summary-row">
-                    <span class="summary-label">商品金額</span>
-                    <span class="summary-value">NT.588</span>
+                    </article>
+                    <article class="cart-item-card">
+                        <div class="item-details-group">
+                            <a href="#" class="item-image-link">
+                                <img src="./imgs/relatives_dogtest.png" alt="貓咪品種+健康基因採樣套組的完整包裝照片" class="item-image">
+                            </a>
+                            <div class="item-info-controls">
+                                <div class="item-title-actions">
+                                    <a href="#" class="item-name">狗狗親戚DNA檢測</a>
+                                    <button type="button" class="del-icon"><i
+                                            class="fa-regular fa-trash-can"></i></button>
+                                </div>
+                                <div class="item-quantity-price">
+                                    <div class="count_button">
+                                        <button class="minus">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                <path
+                                                    d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
+                                            </svg>
+                                        </button>
+                                        <input class="number_input" min="1" value="1">
+                                        <button class="plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                <path
+                                                    d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <span class="item-price">NT$ 2,500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="summary-row">
-                    <span class="summary-label">商品運費</span>
-                    <span class="summary-value">NT.0</span>
-                </div>
-
-                <div class="summary-row total-row">
-                    <span class="summary-label">共 2 項商品</span>
-                    <div class="total-amount-group">
-                        <span class="total-label">總金額</span>
-                        <span class="total-amount-value">NT.588</span>
+                <aside class="mobile-cost-summary">
+                    <div class="summary-row">
+                        <span class="summary-label">商品金額</span>
+                        <span class="summary-value">NT$ 6,700</span>
                     </div>
-                </div>
-            </aside>
-
-            <section class="notes-warnings">
-                <h3 class="notes-title">&lt;溫馨提醒&gt;</h3>
-                <ul class="warning-list">
-                    <li>近期訂單踴躍，出貨可能延遲，實際以物流為主</li>
-                    <li>訂單成立後無法修改訂單內容</li>
-                </ul>
+                    <div class="summary-row">
+                        <span class="summary-label">商品運費</span>
+                        <span class="summary-value">NT$ 120</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span class="summary-label">共 2 項商品</span>
+                        <div class="total-amount-group">
+                            <span class="total-label">總金額</span>
+                            <span class="total-amount-value">NT$ 6,820</span>
+                        </div>
+                    </div>
+                </aside>
             </section>
-
+            <!----- 步驟二:填寫資料 ----->
+            <section id="step_2" class="step-content active-step">
+                <div class="total-price-amount">
+                    <span class="total-price">本次消費總金額NT$ 6,820</span>
+                    <span class="total-amount">共2項商品</span>
+                </div>
+                <div class="payment-option">
+                <h2>選擇付款和取貨方式</h2>
+                <label>
+                    <input type="radio" name="payment-option" value="creditcard">
+                    信用卡-宅配
+                </label>
+                <label>
+                    <input type="radio" name="payment-option" value="atm">
+                    ATM 轉帳-宅配
+                </label>
+                <label>
+                    <input type="radio" name="payment-option" value="e-pay">
+                    電子支付-宅配
+                </label>
+                </div>
+                <div class="order-info">
+                    <label for="full-name">姓名:</label>
+                    <input type="text" id="full-name" name="user_name" placeholder="請輸入姓名">
+                    <label for="phone-num">姓名:</label>
+                    <input type="text" id="phone-num" name="user_phone" placeholder="請輸入姓名">
+                </div>
+            </section>
         </main>
-
-        <div class="fixed-checkout-bar">
-        </div>
-
     </div>
     <!----- footer ----->
     <footer class="main-footer">
