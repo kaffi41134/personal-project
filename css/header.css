@@ -70,6 +70,7 @@ h2 {
 h3 {
     font-size: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
     letter-spacing: 0.06em;
+    font-weight: 500;
 }
 
 /* 價格/作者資訊：24px (Max) -> 18px (Min) */
@@ -302,6 +303,19 @@ p {
     visibility: visible;
 }
 
+@media screen and (max-width :1200px) {
+    .main-header ul {
+        gap: 0;
+    }
+
+    .header-container .logo {
+        margin-left: 10px;
+    }
+
+    .main-header a {
+        padding: 8px 8px;
+    }
+}
 
 @media screen and (max-width :820px) {
     .main-header {

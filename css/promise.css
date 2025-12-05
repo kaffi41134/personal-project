@@ -29,7 +29,15 @@
     margin-bottom: 15px;
 }
 
-.promise-page .row{
+.promise-page .row {
     margin: 0;
 }
 
+@media screen and (max-width :820px) {
+    .promise-page .item {
+        margin-bottom: 30px;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+}

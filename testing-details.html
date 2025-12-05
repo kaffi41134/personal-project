@@ -149,7 +149,15 @@
             width: 90%;
         }
 
-        @media screen and (max-width :820px) {
+        @media screen and (max-width :1200px) {
+            .testing-details .imgs {
+                padding: 0 10px;
+            }
+
+            .testing-details .text {
+                padding: 0 15px;
+            }
+
             [class*="bg_step"] {
                 display: none;
             }
@@ -159,9 +167,24 @@
             .step3,
             .step4,
             .step5 {
+                gap: 60px;
+            }
+
+            .testing-details .imgs {
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width :820px) {
+
+
+            .step1,
+            .step2,
+            .step3,
+            .step4,
+            .step5 {
                 flex-direction: column;
                 margin: 80px auto;
-                gap: 60px;
             }
 
 
@@ -210,7 +233,7 @@
                 <a href="about-us.html"><img src="imgs/dog_icon.svg" alt="關於我們icon">關於我們</a>
                 <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
                 <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
+                <a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
             </nav>
         </div>
     </nav>
@@ -270,7 +293,7 @@
             <img class="bg_step1" src="imgs/bg_step1.jpg" alt="腳印的圖片">
             <img class="imgs" src="imgs/step1.png" alt="步驟一的圖片">
             <div class="text">
-                <h2>收到基因檢測組</h2>
+                <h3>收到基因檢測組</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>購買後，請期待收到您毛孩的基因檢測組。在開啟這趟基因旅程前，請務必詳閱採集步驟說明，確保樣本品質。這將是您深入了解毛孩獨特天賦與健康密碼的重要開端！
                 </p>
@@ -280,7 +303,7 @@
             <img class="bg_step2" src="imgs/bg_step2.jpg" alt="腳印的圖片">
             <img class="imgs" src="imgs/step2.png" alt="步驟二的圖片">
             <div class="text">
-                <h2>採集並寄回樣本</h2>
+                <h3>採集並寄回樣本</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>請依說明於家中完成毛孩口腔細胞採樣。採集後，將毛刷樣本妥善置入專用包裝，並請依照指示儘速寄回，以確保檢體的新鮮與有效性。
                 </p>
@@ -290,7 +313,7 @@
             <img class="bg_step3" src="imgs/bg_step3.jpg" alt="腳印的圖片">
             <img class="imgs" src="imgs/step3.png" alt="步驟三的圖片">
             <div class="text">
-                <h2>樣本檢測分析</h2>
+                <h3>樣本檢測分析</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>當我們收到您的樣本後，將立即送至實驗室進行嚴謹分析。通常，您的毛孩專屬報告會在 2-4 週內完成。若遇檢測時程延誤，我們將會透過電子郵件主動通知您最新進度。
                 </p>
@@ -300,7 +323,7 @@
             <img class="bg_step4" src="imgs/bg_step4.jpg" alt="腳印的圖片">
             <img class="imgs" src="imgs/step4.png" alt="步驟四的圖片">
             <div class="text">
-                <h2>查看檢測報告</h2>
+                <h3>查看檢測報告</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>當您的專屬報告完成後，我們將會透過電子郵件及手機簡訊主動通知。屆時，您將會收到詳盡的電子報告檔，以及一份精美的紙本報告寄送給您。
                 </p>
@@ -310,7 +333,7 @@
             <img class="bg_step5" src="imgs/bg_step5.jpg" alt="腳印的圖片">
             <img class="imgs" src="imgs/step5.png" alt="步驟五的圖片">
             <div class="text">
-                <h2>報告專業諮詢</h2>
+                <h3>報告專業諮詢</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>除了報告寄送，您也可選擇預約時間，親臨我們的檢測中心。屆時將有專業人員為您詳盡解說報告內容，深入淺出地分析數據，確保您完整理解毛孩的基因奧秘。
                 </p>
@@ -325,7 +348,7 @@
             <img class="bg_step0-1" src="imgs/bg_step0-1.png" alt="腳印的圖片">
             <img class="imgs" src="imgs/step1-1.png" alt="步驟一的圖片">
             <div class="text">
-                <h2>採集前準備與檢查</h2>
+                <h3>採集準備與檢查</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>採集前準備與檢查（禁食兩小時，可飲水）確認毛孩口腔內無食物殘渣，並溫和清除。取出毛刷時，全程勿觸碰前端，並保留包裝上的採檢序號。
                 </p>
@@ -335,7 +358,7 @@
             <img class="bg_step1-1" src="imgs/bg_step1-1.png" alt="腳印的圖片">
             <img class="imgs" src="imgs/step2-1.png" alt="步驟二的圖片">
             <div class="text">
-                <h2>採雙份樣本採集</h2>
+                <h3>採雙份樣本採集</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>雙份樣本採集將毛刷貼緊臉頰內側上緣，在牙齦交界處輕柔旋轉15秒，採集口腔皮膜細胞。隨後，立即取出第二支毛刷，重複相同動作，作為備用樣本。
                 </p>
@@ -345,7 +368,7 @@
             <img class="bg_step2-1" src="imgs/bg_step2-1.png" alt="腳印的圖片">
             <img class="imgs" src="imgs/step3-1.png" alt="步驟三的圖片">
             <div class="text">
-                <h2>樣本乾燥與保護</h2>
+                <h3>樣本乾燥與保護</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>樣本乾燥與保護兩支毛刷採集後，請靜置乾燥處30分鐘自然風乾口水。風乾期間請勿觸碰。(乾燥是保存樣本完整性的重要步驟)
                 </p>
@@ -355,19 +378,18 @@
             <img class="bg_step3-1" src="imgs/bg_step3-1.png" alt="腳印的圖片">
             <img class="imgs" src="imgs/step4-1.png" alt="步驟四的圖片">
             <div class="text">
-                <h2>回裝寄回與確認</h2>
+                <h3>回裝寄回與確認</h3>
                 <img class="line" src="imgs/line.svg" alt="分隔線">
                 <p>將完全風乾的兩支毛刷放回原塑膠包裝中（不需封死），確保良好收納。請盡快連同採檢文件寄回，以維持樣本準確性。
                 </p>
             </div>
-            <img class="bg_step4-1" src="imgs/bg_step4-1.png" alt="腳印的圖片">
         </div>
     </section>
     <!----- footer ----->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-container">
-                <div class="row row-cols-sm-12">
+                <div class="row row-cols-md-12">
                     <div class="col">
                         <div class="footer-item">
                             <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>

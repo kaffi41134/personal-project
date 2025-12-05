@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/reviews.css">
     <link rel="stylesheet" href="css/Q&A.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -47,7 +49,7 @@
                 <a href="about-us.html"><img src="imgs/dog_icon.svg" alt="關於我們icon">關於我們</a>
                 <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
                 <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
+                <a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
             </nav>
         </div>
     </nav>
@@ -76,7 +78,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="myaccount.html"><i class="fa-solid fa-cart-shopping"></i>
+                        <a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i>
                             <span>購物中心</span>
                         </a>
                     </li>
@@ -97,8 +99,18 @@
             <p>基因檢測，讓您發掘毛小孩的品種血統與潛在健康<br>風險，掌握最全面的資訊，給牠貼心照護。</p>
             <a href="testing-items.html">基因檢測</a>
         </div>
-        <div class="banner-building">
-            <img src="imgs/banner.png" alt="建築物外觀">
+        <div class="my_block">
+            <div class="banner-building">
+                <div>
+                    <img src="imgs/banner.png" alt="建築物外觀照片">
+                </div>
+                <div>
+                    <img src="imgs/banner_interior.png" alt="建築物室內照片">
+                </div>
+                <div>
+                    <img src="imgs/banner_consultationroom.png" alt="診所看診室照片">
+                </div>
+            </div>
         </div>
     </main>
     <a href="#" class="quick-consult">
@@ -117,7 +129,7 @@
         <div class="container">
             <div class="product-content-wrapper">
                 <div id="dog-products" class="product-group active-content">
-                    <div class="row row-cols-4 row-cols-md-6 row-cols-sm-12">
+                    <div class="row row-cols-4 row-cols-md-6 row-cols-mdtosm-12">
                         <div class="col">
                             <article class="card">
                                 <h3>狗狗品種DNA測試</h3>
@@ -356,47 +368,37 @@
     </section>
     <!----- footer ----->
     <footer class="main-footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="row row-cols-sm-12">
-                    <div class="col">
-                        <div class="footer-item">
-                            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
-                            <div class="media-icon">
-                                <a href="#"><img src="imgs/fb.svg" alt=""></a>
-                                <a href="#"><img src="imgs/twitter.svg" alt=""></a>
-                                <a href="#"><img src="imgs/ins.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="footer-item">
-                            <p class="text">聯絡我們</p>
-                            <div class="contact-line">
-                                <img src="imgs/email.svg" alt="信箱">
-                                <p>petcare.service@example.com</p>
-                            </div>
-                            <div class="contact-line">
-                                <img src="imgs/tele.svg" alt="電話">
-                                <p>(02) 1234-5678</p>
-                            </div>
-                            <div class="contact-line">
-                                <img src="imgs/add.svg" alt="地址">
-                                <p>100 台北市中正區仁愛路一段1號</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="footer-item">
-                            <p>營業時段</p>
-                            <div class="contact-line">
-                                <p>週一~週六 09:00 ~ 21:00</p>
-                            </div>
-                            <div class="contact-line">
-                                <p>週日 休息 </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
+                <div class="media-icon">
+                    <a href="#"><img src="imgs/fb.svg" alt=""></a>
+                    <a href="#"><img src="imgs/twitter.svg" alt=""></a>
+                    <a href="#"><img src="imgs/ins.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <p class="text">聯絡我們</p>
+                <div class="contact-line">
+                    <img src="imgs/email.svg" alt="信箱">
+                    <p>petcare.service@example.com</p>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/tele.svg" alt="電話">
+                    <p>(02) 1234-5678</p>
+                </div>
+                <div class="contact-line">
+                    <img src="imgs/add.svg" alt="地址">
+                    <p>100 台北市中正區仁愛路一段1號</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <p>營業時段</p>
+                <div class="contact-line">
+                    <p>週一~週六 09:00 ~ 21:00</p>
+                </div>
+                <div class="contact-line">
+                    <p>週日 休息 </p>
                 </div>
             </div>
         </div>
@@ -427,8 +429,9 @@
             });
         });
     </script>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./vendors/js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./vendors/slick/slick.min.js"></script>
     <script>
         AOS.init({
             duration: 1200,
@@ -440,6 +443,17 @@
             e.preventDefault();
             $(".wrap.fa-angle-down").css("style", "transform: rotate(180deg)");
         })
+    </script>
+    <script>
+        $(".banner-building").slick({
+            dots: true,
+            infinite: true,
+            autoplaySpeed: 2000,
+            autoplay: true,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+        });
     </script>
 </body>
 

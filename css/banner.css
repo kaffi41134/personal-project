@@ -6,9 +6,10 @@
     border-radius: 20px;
     height: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 50px;
+    gap: 30px;
 }
 
 .banner-text a {
@@ -40,17 +41,14 @@
     align-items: flex-start;
 }
 
-.banner-building img {
-    max-width: 100%;
+.banner-building .slick-slide img {
+    width: 100%;
     border-radius: 20px;
-    height: auto;
-    display: block;
 }
 
-.banner-building {
-    width: 50%;
+.my_block {
+    width: 400px;
 }
-
 .quick-consult {
     position: fixed;
     top: 50%;
@@ -108,12 +106,13 @@
         align-items: flex-start;
     }
 
-    .banner-text {
-        width: auto;
+    .my_block {
+        margin: auto;
     }
 
-    .banner-building {
+    .banner-text {
         width: auto;
+        margin: auto;
     }
 
     .banner-text h1 {
@@ -126,6 +125,4 @@
 
 }
 
-@media screen and (max-width :430px) {
-    
-}
+@media screen and (max-width :430px) {}
