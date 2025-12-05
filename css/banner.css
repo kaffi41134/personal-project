@@ -49,6 +49,7 @@
 .my_block {
     width: 400px;
 }
+
 .quick-consult {
     position: fixed;
     top: 50%;
@@ -125,4 +126,8 @@
 
 }
 
-@media screen and (max-width :430px) {}
+@media screen and (max-width :430px) {
+    .my_block {
+        width: 300px;
+    }
+}

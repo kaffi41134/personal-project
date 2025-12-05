@@ -74,7 +74,7 @@
     .item-text ul {
         padding-left: 0;
         padding: 10px 0;
-        color: #40444D;
+        color: var(--text-body);
     }
 
     .add-to-cart-btn {
@@ -89,6 +89,7 @@
         padding: 10px 30px;
         flex: 1 1 50%;
         max-width: 200px;
+        color: var(--text-title);
     }
 
     .add-to-cart-btn:hover {
@@ -102,7 +103,7 @@
     }
 
     .item-text p:nth-of-type(1) {
-        color: #40444D;
+        color: var(--text-body);
     }
 
     .separate {
@@ -145,7 +146,7 @@
 
     .notice-list p {
         font-size: 16px;
-        color: #40444D;
+        color: var(--text-body);
         padding-left: 33px;
         letter-spacing: 0.12em;
     }
@@ -190,7 +191,7 @@
     .count_button button svg {
         width: 15px;
         height: 15px;
-        fill: #202226;
+        fill: var(--text-title);
     }
 
     @media screen and (max-width :820px) {
@@ -215,7 +216,7 @@
         .count_button button svg {
             width: 10px;
             height: 10px;
-            fill: #202226;
+            fill: var(--text-title);
         }
 
         .number_input {

@@ -52,6 +52,15 @@ p {
     color: var(--text-body);
 } */
 
+:root {
+    --text-title: #202226;
+    --text-body: #40444D;
+
+    --bg-body: #F6F1EA;
+    --bg-muted: #F6F1EA;
+    --bg-dark: #D0BB95;
+}
+
 h1 {
     font-size: clamp(1.875rem, 1.4rem + 1.2vw, 2.5rem);
     line-height: 1.5;
@@ -101,15 +110,6 @@ p {
     font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1.125rem);
     letter-spacing: 0.12em;
     color: var(--text-body);
-}
-
-:root {
-    --text-title: #202226;
-    --text-body: #40444D;
-
-    --bg-body: #F6F1EA;
-    --bg-muted: #F6F1EA;
-    --bg-dark: #D0BB95;
 }
 
 .header-container {
