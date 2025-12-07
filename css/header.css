@@ -281,10 +281,6 @@ p {
     color: var(--text-body);
 }
 
-.hamburger .fa-circle-user {
-    margin-right: 15px;
-}
-
 .menu-overlay {
     height: 100%;
     width: 100%;

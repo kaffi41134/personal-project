@@ -1,5 +1,4 @@
 .QA .container {
-    position: relative;
     max-width: 1000px;
     background-color: #FFF7EB;
     margin: 20px auto;
@@ -8,16 +7,25 @@
     border-radius: 20px;
 }
 
+.faq-item .answer {
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+.rotate-icon {
+    transform: rotate(180deg);
+}
+
 .QA .container img {
     position: absolute;
     left: 0;
-    top: 0;
-    z-index: 1;
+    top: 15px;
+    z-index: 0;
 }
 
 .QA .container .faq-item {
     position: relative;
-    z-index: 5;
 }
 
 .QA .container h3 {
@@ -27,6 +35,8 @@
 .QA .container p {
     color: #40444D;
     padding-top: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .QA .container .wrap svg {

@@ -61,6 +61,15 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.sub-avatar {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sub-avatar:hover {
+    transform: scale(1.1);
+}
+
 .main-avatar {
     position: absolute;
     top: 50%;
