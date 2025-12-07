@@ -78,6 +78,23 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+
+        @media screen and (max-width :680px) {
+            .form {
+                height: 50vh;
+            }
+
+            .form .group {
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+        @media screen and (max-width :430px) {
+            .log h3{
+                white-space: nowrap;
+            }
+        }
     </style>
 </head><body>
     <!----- hamburger ----->
@@ -97,7 +114,7 @@
                 <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
                 <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
                 <a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
-                <a href="#login-form" rel="modal:open" id="openAccountModalMobile" class="myaccount"><i class="fa-solid fa-circle-user"></i>會員中心</a>
+                <a href="#login-form" rel="modal:open" id="openAccountModalMobile" class="myaccount" onclick="document.getElementById('menu_control').checked = false;"><i class="fa-solid fa-circle-user"></i>會員中心</a>
             </nav>
         </div>
     </nav>
@@ -291,6 +308,7 @@
     <script src="./vendors/js/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/count.js"></script>
     <script>
         const { createApp, ref } = Vue;
         createApp({

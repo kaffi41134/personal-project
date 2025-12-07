@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="./js/count.js"></script>
     <style>
         body {
             background-color: rgba(255, 247, 224, 0.7);
@@ -530,6 +529,23 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+
+        @media screen and (max-width :680px) {
+            .form {
+                height: 50vh;
+            }
+
+            .form .group {
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+        @media screen and (max-width :430px) {
+            .log h3 {
+                white-space: nowrap;
+            }
+        }
     </style>
 </head>
 
@@ -541,7 +557,7 @@
         <div class="mobile-header">
             <div class="logo">
                 <a href="index.html"><img src="./imgs/logo.svg" alt="寵愛基因 Pet Genic"></a>
-                
+
             </div>
             <label for="menu_control" class="menu_btn">
                 <span>選單</span>
@@ -551,7 +567,9 @@
                 <a href="testing-details.html"><img src="imgs/cat_icon.svg" alt="檢測介紹icon">檢測介紹</a>
                 <a href="testing-items.html"><img src="imgs/bone_icon.svg" alt="檢測項目icon">檢測項目</a>
                 <a href="shopping_cart.html"><i class="fa-solid fa-cart-shopping"></i>購物中心</a>
-                <a href="#login-form" rel="modal:open" id="openAccountModalMobile" class="myaccount"><i class="fa-solid fa-circle-user"></i>會員中心</a>
+                <a href="#login-form" rel="modal:open" id="openAccountModalMobile" class="myaccount"
+                    onclick="document.getElementById('menu_control').checked = false;"><i
+                        class="fa-solid fa-circle-user"></i>會員中心</a>
             </nav>
         </div>
     </div>
@@ -650,22 +668,19 @@
                             <div class="item-info-controls">
                                 <div class="item-title-actions">
                                     <a href="#" class="item-name">貓咪品種+健康DNA檢測</a>
-                                    <button type="button" class="del-icon" aria-label="刪除商品"><i
-                                            class="fa-regular fa-trash-can"></i></button>
+                                    <button type="button" class="del-icon" aria-label="刪除商品"><i class="fa-regular fa-trash-can"></i></button>
                                 </div>
                                 <div class="item-quantity-price">
                                     <div class="count_button">
-                                        <button class="minus" id="btnMinus">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 640 640">
+                                        <button class="minus btnMinus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                                 <path
                                                     d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
                                             </svg>
                                         </button>
-                                        <input class="number_input" min="1" value="1">
-                                        <button class="plus" id="btnPlus">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 640 640">
+                                        <input class="number_input qty" min="1" value="1">
+                                        <button class="plus btnPlus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                                 <path
                                                     d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
                                             </svg>
@@ -684,22 +699,19 @@
                             <div class="item-info-controls">
                                 <div class="item-title-actions">
                                     <a href="#" class="item-name">狗狗親戚DNA檢測</a>
-                                    <button type="button" class="del-icon" aria-label="刪除商品"><i
-                                            class="fa-regular fa-trash-can"></i></button>
+                                    <button type="button" class="del-icon" aria-label="刪除商品"><i class="fa-regular fa-trash-can"></i></button>
                                 </div>
                                 <div class="item-quantity-price">
                                     <div class="count_button">
-                                        <button class="minus" id="btnMinus">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 640 640">
+                                        <button class="minus btnMinus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                                 <path
                                                     d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
                                             </svg>
                                         </button>
-                                        <input class="number_input" min="1" value="1">
-                                        <button class="plus" id="btnPlus">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 640 640">
+                                        <input class="number_input qty" min="1" value="1">
+                                        <button class="plus btnPlus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                                 <path
                                                     d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
                                             </svg>
@@ -853,17 +865,15 @@
                     </div>
                     <div class="cart-content">
                         <div class="count_button">
-                            <button class="minus" id="btnMinus">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640">
+                            <button class="minus btnMinus">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                     <path
                                         d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
                                 </svg>
                             </button>
-                            <input class="number_input" min="1" value="1">
-                            <button class="plus" id="btnPlus">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640">
+                            <input class="number_input qty" min="1" value="1">
+                            <button class="plus btnPlus">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                     <path
                                         d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
                                 </svg>
@@ -885,17 +895,15 @@
                     </div>
                     <div class="cart-content">
                         <div class="count_button">
-                            <button class="minus" id="btnMinus">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640">
+                            <button class="minus btnMinus">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                     <path
                                         d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z" />
                                 </svg>
                             </button>
-                            <input class="number_input" min="1" value="1">
-                            <button class="plus" id="btnPlus">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640">
+                            <input class="number_input qty" min="1" value="1">
+                            <button class="plus btnPlus">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                     <path
                                         d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z" />
                                 </svg>
@@ -1149,6 +1157,29 @@
                 }
             }
         }).mount('#login-form')
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            let btnMinusObjs = this.document.getElementsByClassName("btnMinus");
+            let qtyObjs = this.document.getElementsByClassName("qty");
+            let btnPlusObjs = this.document.getElementsByClassName("btnPlus");
+
+            for (let i = 0; i < btnMinusObjs.length; i++) {
+                btnMinusObjs[i].onclick = function () {
+                    let qtyObj = qtyObjs[i];
+                    let value = parseInt(qtyObj.value);
+                    if (value <= 1) {
+                        return;
+                    }
+                    qtyObj.value = value - 1;
+                }
+
+                btnPlusObjs[i].onclick = function (e) {
+                    let qtyObj = qtyObjs[i];
+                    qtyObj.value = parseInt(qtyObj.value) + 1;
+                }
+            }
+        });
     </script>
 </body>
 

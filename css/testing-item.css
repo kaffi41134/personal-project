@@ -118,7 +118,7 @@
         border-radius: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         max-width: 700px;
-        margin: 100px 10px;
+        margin: 100px auto;
     }
 
     .purchase-notice_content h3 {
